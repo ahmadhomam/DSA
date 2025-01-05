@@ -13,11 +13,11 @@ class node{
     }
     //destructor:
     ~node(){
-        if(this->next == NULL){
+        if(this->next != NULL){
             delete next;
             this->next = NULL ;
-            cout<<"this value is deleted : "<<this->data<<endl;
         }
+        cout<<"this value is deleted : "<<this->data<<endl;
     }
 
 };

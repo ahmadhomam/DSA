@@ -78,38 +78,29 @@ void insertAtPosition(int data,int position,node *&head ,node *&tail){
 }
 
 void deletionatposition(int position,node *&head,node *&tail){
-    node *temp = head ;
-    //deleting the first element ;
-    if(position == 1){
+    node *temp = head  ;
+    if (position == 1 ){
         temp->next->pre = NULL ;
         head = temp->next ;
         temp->next = NULL ;
         delete temp ;
     }
     else{
-        node *curr = NULL ;
         int cnt =1 ;
+        node *curr = head ;
+        node *prev = NULL ;
         while(cnt < position){
-            temp = temp->next ;
-            curr = temp ;
+            prev = curr ;
+            curr = curr->next ;
             cnt ++ ;
         }
+        prev->next = curr->next ;
         if(curr->next == NULL){
-            curr->pre->next = NULL ;
-            tail = curr->pre ;
-            curr->pre = NULL ;
-            curr->next= NULL ;
-            delete curr ;
+            tail = curr->pre; 
         }
-        else{
-            curr->pre->next = curr->next ;
-        curr->next->pre = curr->pre ;
+        curr->next = NULL ;
         curr->pre = NULL ;
-        curr->next= NULL ;
         delete curr ;
-        }
-        
-
     }
 }
 void print(node *head){

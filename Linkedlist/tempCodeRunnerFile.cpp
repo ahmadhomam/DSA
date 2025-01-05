@@ -1,1 +1,1 @@
-        cout<<"this value is deleted : "<<this->data<<endl;
+    node *temp = new node(data) ;
