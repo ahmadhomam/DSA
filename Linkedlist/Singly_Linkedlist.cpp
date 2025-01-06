@@ -87,6 +87,7 @@ void deletionatposition (int position ,node *&head,node *tail){
 //treversing the linkedlist or printing the linkedlist :
 void print(node * &head ){
     node *temp = head ;
+    cout<<"head : "<<head->data<<endl;
     while(temp != NULL){
         cout<<temp->data <<" ";
         temp = temp->next ;
@@ -94,6 +95,50 @@ void print(node * &head ){
     cout<<endl ;
 }
 
+//Approach 1 :
+node* reverseLL_1(node *&head){
+    //we have to reverse a singly linked list ;
+    node *pre = NULL ;
+    node *curr  = head ;
+    while(curr != NULL ){
+        node *forw = curr->next ;
+        curr->next = pre ;
+        pre = curr ;
+        curr = forw ;
+        head = pre ;
+    }
+    return head ;
+}
+
+// Approach 2 :
+void solve(node *&head,node *&pre,node *&curr){
+    if(curr == NULL){
+        head = pre ;
+        return ;
+    }
+    solve(head,curr,curr->next) ;
+    curr->next = pre ;
+}
+node* reverseLL_2(node *&head ){
+    node *pre = NULL ;
+    node *curr  = head ;
+    solve(head,pre ,curr) ;
+    return head ;
+}
+
+// Approach 3 :
+node* solve(node *&head){
+    if(head == NULL || head->next == NULL)
+    return head ;
+
+    node* chotahead = solve(head->next) ;
+    head->next->next = head ;
+    head->next = NULL ;
+    return chotahead ;
+}
+node* reverseLL_3(node *&head){
+    head = solve(head) ;
+}
 
 int main(){
     node *node1 = new node(10) ;
@@ -110,9 +155,15 @@ int main(){
     print(head) ;
     insertatposition(1,head,tail,5) ;
     print(head) ;
-    deletionatposition(1,head,tail) ;
+    // deletionatposition(1,head,tail) ;
+    // print(head) ;
+    // cout<<"head : "<<head->data<<endl ;
+    // cout<<"tail : "<<tail->data<<endl ;
+    reverseLL_1(head) ;
     print(head) ;
-    cout<<"head : "<<head->data<<endl ;
-    cout<<"tail : "<<tail->data<<endl ;
+    reverseLL_2(head) ;
+    print(head) ;
+    reverseLL_3(head) ;
+    print(head) ;
 
 }
