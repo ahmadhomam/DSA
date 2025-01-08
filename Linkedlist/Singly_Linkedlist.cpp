@@ -140,6 +140,29 @@ node* reverseLL_3(node *&head){
     head = solve(head) ;
 }
 
+//APPROACH 1:
+int getlength(node *head){
+    int len = 0 ;
+    node *temp = head ;
+    while(temp != NULL){
+        len ++ ;
+        temp = temp->next ;
+    }
+    return len ;
+}
+void middle(node *&head ){
+    int len = getlength(head) ;
+    int ans = len /2 ;
+
+    node *temp = head ;
+    int count =0 ;
+    while(count < ans ){
+        temp = temp->next ;
+        count ++ ;
+    }
+    head = temp ;
+}
+
 int main(){
     node *node1 = new node(10) ;
     //cout<<node1->data<<endl;
@@ -155,6 +178,7 @@ int main(){
     print(head) ;
     insertatposition(1,head,tail,5) ;
     print(head) ;
+
     // deletionatposition(1,head,tail) ;
     // print(head) ;
     // cout<<"head : "<<head->data<<endl ;
@@ -163,7 +187,8 @@ int main(){
     print(head) ;
     reverseLL_2(head) ;
     print(head) ;
-    reverseLL_3(head) ;
+    // reverseLL_3(head) ;
+    // print(head) ;
+    middle(head) ;
     print(head) ;
-
 }
