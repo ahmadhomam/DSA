@@ -163,6 +163,20 @@ void middle(node *&head ){
     head = temp ;
 }
 
+bool iscircular(node *head){
+    if(head == NULL){
+        return true ;
+    }
+    node *temp = head->next ;
+    while(temp != NULL && temp != head){
+        temp = temp->next ;
+    }
+    if(temp == NULL){
+        return false ;
+    }
+    return true ;
+}
+
 int main(){
     node *node1 = new node(10) ;
     //cout<<node1->data<<endl;
@@ -189,6 +203,12 @@ int main(){
     print(head) ;
     // reverseLL_3(head) ;
     // print(head) ;
-    middle(head) ;
-    print(head) ;
+    // middle(head) ;
+    // print(head) ;
+    if(iscircular(tail)){
+        cout<<"the LL is circular "<<endl ;
+    }
+    else{
+        cout<<"the LL is not circular"<<endl ;
+    }
 }

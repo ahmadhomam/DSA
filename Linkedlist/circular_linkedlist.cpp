@@ -64,8 +64,23 @@ void delete_element(int element ,node *&tail){
 
     }
 
-    //
 }
+// checking if a linked list is circular or not ;
+
+bool iscircular(node *head){
+    if(head == NULL){
+        return true ;
+    }
+    node *temp = head->next ;
+    while(temp != NULL && temp != head){
+        temp = temp->next ;
+    }
+    if(temp == NULL){
+        return false ;
+    }
+    return true ;
+}
+
 void print(node *&tail){
     node *temp = tail ;
     if(tail == NULL){
@@ -83,17 +98,23 @@ int main(){
     node *tail = NULL ;
     insertatposition(5,3,tail) ;
     print(tail) ;
-    // insertatposition(3,5,tail) ;
-    // print(tail) ;
-    // insertatposition(3,10,tail) ;
-    // print(tail) ;
-    // insertatposition(5,17,tail) ;
-    // print(tail) ;
-    // insertatposition(5,33,tail) ;
-    // print(tail) ;
-    // insertatposition(17,25,tail) ;
-    // print(tail) ;
-    // cout<<"tail : "<<tail->data<<endl;
+    insertatposition(3,5,tail) ;
+    print(tail) ; 
+    insertatposition(3,10,tail) ;
+    print(tail) ;
+    insertatposition(5,17,tail) ;
+    print(tail) ;
+    insertatposition(5,33,tail) ;
+    print(tail) ;
+    insertatposition(17,25,tail) ;
+    print(tail) ;
+    cout<<"tail : "<<tail->data<<endl;
     delete_element(3,tail) ;
     print(tail) ;
+    if(iscircular(tail)){
+        cout<<"the LL is circular "<<endl ;
+    }
+    else{
+        cout<<"the LL is not circular"<<endl ;
+    }
 }
