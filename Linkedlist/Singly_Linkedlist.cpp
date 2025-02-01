@@ -1,4 +1,5 @@
 #include <iostream>
+#include <map>
 using namespace std ;
 //  CREATING A LINKEDLIST :
 class node{
@@ -177,6 +178,24 @@ bool iscircular(node *head){
     return true ;
 }
 
+bool detectloop(node * head ){
+    //USING MAP ;
+    map<node*,bool> visited ;
+    if(head == NULL){
+        return false ;
+    }
+    node* temp = head ;
+    while(temp != NULL ){
+        if(visited[temp] == true){
+            cout<<"it is circular at "<<temp->data<<endl ;
+            return true ;
+        }
+        visited[temp] = true ;
+        temp = temp->next ;
+    }
+    return false ;
+}
+
 int main(){
     node *node1 = new node(10) ;
     //cout<<node1->data<<endl;
@@ -201,14 +220,23 @@ int main(){
     print(head) ;
     reverseLL_2(head) ;
     print(head) ;
+    tail->next = head->next ;
+
     // reverseLL_3(head) ;
     // print(head) ;
     // middle(head) ;
     // print(head) ;
-    if(iscircular(tail)){
-        cout<<"the LL is circular "<<endl ;
+    // if(iscircular(tail)){
+    //     cout<<"the LL is circular "<<endl ;
+    // }
+    // else{
+    //     cout<<"the LL is not circular"<<endl ;
+    // }
+
+    if(detectloop(head)){
+        cout<<"this is a circular linkedlist "<<endl ;
     }
     else{
-        cout<<"the LL is not circular"<<endl ;
+        cout<<"this is not circular "<<endl ;
     }
 }
