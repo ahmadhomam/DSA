@@ -196,6 +196,25 @@ bool detectloop(node * head ){
     return false ;
 }
 
+bool floydcycle(node * head ){
+    if(head == NULL){
+        return true ;
+    }
+    node *fast = head; 
+    node *slow = head ;
+    while(fast != NULL){
+        fast = fast->next ;
+        if(fast != NULL){
+            fast = fast->next ;
+        }
+        slow = slow->next ;
+        if(fast == slow){
+            return true ;
+        }
+    }
+    return false ;
+}
+
 int main(){
     node *node1 = new node(10) ;
     //cout<<node1->data<<endl;
@@ -220,7 +239,7 @@ int main(){
     print(head) ;
     reverseLL_2(head) ;
     print(head) ;
-    tail->next = head->next ;
+    //tail->next = head->next ;
 
     // reverseLL_3(head) ;
     // print(head) ;
@@ -233,7 +252,13 @@ int main(){
     //     cout<<"the LL is not circular"<<endl ;
     // }
 
-    if(detectloop(head)){
+    // if(detectloop(head)){
+    //     cout<<"this is a circular linkedlist "<<endl ;
+    // }
+    // else{
+    //     cout<<"this is not circular "<<endl ;
+    // }
+    if(floydcycle(head)){
         cout<<"this is a circular linkedlist "<<endl ;
     }
     else{
