@@ -23,44 +23,6 @@ public:
     }
 };
 
-//Approach 1 with data replacement : T.C =O(n) + O(n) = O(n) and S.C = O(1) ;
-Node* sortList(Node *head){
-    int zerocount = 0 ;
-    int onecount = 0 ;
-    int twocount = 0 ;
-    Node *temp = head ;
-    while(temp != NULL){
-        if(temp->data == 0){
-            zerocount++ ;
-        }
-        else if(temp->data == 1){
-            onecount++ ;
-        }
-        else{
-            twocount++ ;
-        }
-        temp = temp->next ;
-    }
-    temp = head ;
-    while(temp != NULL){
-        for (int i =0 ;i<zerocount;i++){
-            temp->data = 0 ;
-            temp= temp->next ;
-        }
-        for(int i =0;i<onecount;i++){
-            temp->data = 1 ;
-            temp= temp->next ;
-
-        }
-        for(int i=0;i<twocount;i++){
-            temp->data =2 ;
-            temp= temp->next ;
-
-        }
-    }
-    return head ;
-}
-
 //Approach 2 without data replacement : T.C = O(n) and S.C = O(1) ;
 Node* sortList(Node *head){
    Node* zerohead = new Node(0) ;
