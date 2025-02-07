@@ -1,100 +1,85 @@
-#include <iostream>
-using namespace std ;
+#include <bits/stdc++.h>
 
-class Node
-{
-public:
-    int data;
-    Node *next;
-    Node()
-    {
-        this->data = 0;
-        next = NULL;
-    }
-    Node(int data)
-    {
-        this->data = data; 
-        this->next = NULL;
-    }
-    Node(int data, Node* next)
-    {
-        this->data = data;
-        this->next = next;
-    }
-};
+/************************************************************
 
-//Approach 2 with data replacement : T.C = O(n)+ O(n) = O(n) and S.C = O(1) ;
-Node* sortList2(Node *head){
-    int zerocount = 0 ;
-    int onecount = 0 ;
-    int twocount = 0 ;
-    Node *temp = head ;
-    while(temp != NULL){
-        if(temp->data == 0){
-            zerocount++ ;
-        }
-        else if(temp->data == 1){
-            onecount++ ;
-        }
-        else{
-            twocount++ ;
-        }
-        temp = temp->next ;
-    }
-    temp = head ;
-    while(temp != NULL){
-        for (int i =0 ;i<zerocount;i++){
-            temp->data = 0 ;
-            temp= temp->next ;
-        }
-        for(int i =0;i<onecount;i++){
-            temp->data = 1 ;
-            temp= temp->next ;
+    Following is the linked list node structure.*/
+    
+    template <typename T>
+    class Node {
+        public:
+        T data;
+        Node* next;
 
+        Node(T data) {
+            next = NULL;
+            this->data = data;
         }
-        for(int i=0;i<twocount;i++){
-            temp->data =2 ;
-            temp= temp->next ;
 
+        ~Node() {
+            if (next != NULL) {
+                delete next;
+            }
+        }
+    };
+
+// **********************************************************
+Node<int>* solve(Node<int>* first ,Node<int>* second ){
+    Node<int>* curr1 = first  ;
+    Node<int>* next1 = curr1->next ;
+    Node<int>* curr2 = second ;
+    Node<int>* next2 = curr2->next ;
+
+    // if there is only one element in first list ;
+    if(next1 == NULL){
+        curr1->next = curr2 ;
+        return first ;
+    }
+
+
+    while(next1 != NULL && curr2 != NULL){
+        if((curr2->data >= curr1->data) && (curr2->data <= next1->data))  {
+        //adding element in between two element ;
+        curr1->next = curr2 ;
+        next2 = curr2->next ;
+        curr2->next = next1 ;
+
+        //updating the the pointer after adding element in between ;
+        curr1 = curr1->next ;
+        curr2 = next2 ;
+    }
+    else{
+        //updating pointer for next set condition ;
+        curr1 = curr1->next ;
+        next1 = next1->next ;
+
+        //checking if the first list end , just adding remaining element of 2nd list ;
+        if(next1 == NULL){
+            curr1->next = curr2 ;
+            return first ;
         }
     }
-    return head ;
+
+    }
+     return first ;
+
 }
 
-//Approach 2 without data replacement : T.C = O(n) and S.C = O(1) ;
-Node* sortList(Node *head){
-   Node* zerohead = new Node(0) ;
-   Node* zerotail = zerohead ;
-   Node* onehead = new Node(0) ;
-   Node* onetail = onehead ;
-   Node* twohead = new Node(0) ; 
-   Node* twotail = twohead ;
 
-   Node* temp = head ;
-   while(temp != NULL){
-       if(temp->data == 0){
-           zerotail->next = temp ;
-           zerotail = zerotail->next ;
-       }
-       else if(temp->data == 1 ){
-           onetail->next = temp ;
-           onetail = onetail->next ;
-       }
-       else{
-           twotail->next = temp ;
-           twotail = twotail->next ;
-       }
-       temp = temp->next ;
-   }
-   if(onehead->next != NULL){
-       zerotail->next = onehead->next ;
-   }
-   else{
-       zerotail->next = twohead->next ;
-   }
-   onetail->next = twohead->next ;
-   twotail->next = NULL ;
+Node<int>* sortTwoLists(Node<int>* first, Node<int>* second)
+{
+    if(first == NULL){
+        return second ;
+    }
+    else if(second == NULL){
+        return first ;
+    }
 
-   head = zerohead->next  ;
-   return head ;
+    // condition to decide the first list ;
+
+    if(first->data <= second->data){
+        solve(first ,second) ;
+    }
+    else{
+        solve(second ,first) ;
+    }
 }
