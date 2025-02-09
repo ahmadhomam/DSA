@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <unordered_map> 
+using namespace std ;
+
 
 /************************************************************
 
@@ -26,31 +29,30 @@
 
 // **********************************************************
 
-// remove DUPLICATES in LL (1st Approach )
+// remove DUPLICATES in LL (2nd Approach )
 Node<int> *removeDuplicates(Node<int> *head)
 {
-    if(head == NULL || head ->next == NULL){
+    if(head ==NULL || head->next == NULL){
         return head ;
     }
-    Node<int> * curr = head ;
-    while(curr != NULL){
-        Node<int> *temp = curr->next ;
-        Node<int> *pre= curr ;
-        while(temp != NULL){
-            if(curr->data == temp->data){
-                Node<int>* node_todelete = temp ;
-                pre->next = temp->next  ;
-                temp = temp->next ;
-                delete node_todelete ;
-               // continue ;
-            }
-            else{
-            pre = temp ;
-            temp = temp->next ;
-            }
 
+    unordered_map<int,bool> duplicate ;
+    Node<int> *temp = head ;
+    Node<int>* pre = NULL ;
+    while(temp != NULL){
+        if(duplicate[temp->data] == true){
+            pre->next = temp->next ;
+            Node<int>* next_next = temp->next  ;
+            delete temp ;
+            temp = next_next ;
+            // continue ;
         }
-        curr = curr->next ;
+        else{
+        duplicate[temp->data] = true ;
+        pre = temp ;
+        temp = temp->next ;
+        }
+
     }
     return head ;
 }
