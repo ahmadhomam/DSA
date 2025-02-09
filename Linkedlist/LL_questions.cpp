@@ -26,43 +26,33 @@
 
 // **********************************************************
 
-// sort LL in K groups : 
-
-int length(Node<int> *head){
-    int len =0 ;
-    while(head != NULL){
-        len ++ ;
-        head = head ->next ;
-    }
-    return len ;
-}
-
-Node<int>* kReverse(Node<int>* head, int k) {
-    // Write your code here.
-
+// remove DUPLICATES in LL (1st Approach )
+Node<int> *removeDuplicates(Node<int> *head)
+{
     if(head == NULL || head ->next == NULL){
         return head ;
     }
+    Node<int> * curr = head ;
+    while(curr != NULL){
+        Node<int> *temp = curr->next ;
+        Node<int> *pre= curr ;
+        while(temp != NULL){
+            if(curr->data == temp->data){
+                Node<int>* node_todelete = temp ;
+                pre->next = temp->next  ;
+                temp = temp->next ;
+                delete node_todelete ;
+               // continue ;
+            }
+            else{
+            pre = temp ;
+            temp = temp->next ;
+            }
 
-    int count= 0 ;
-    Node<int>* curr = head ;
-    Node<int>* pre = NULL ;
-    while(curr != NULL && count < k){
-        Node<int> *forw = curr->next ;
-        curr->next = pre ;
-        pre = curr ;
-        curr = forw ;
-        count ++ ;
+        }
+        curr = curr->next ;
     }
-
-    int value = length(curr) ;
-    if(curr != NULL && value >= k){
-        head->next = kReverse(curr,k) ;
-    }
-    else{
-        head->next = curr ;
-    }
-    return pre ;
+    return head ;
 }
 
 // Merge two sorted linkedlist 
