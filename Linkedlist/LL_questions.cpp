@@ -22,7 +22,51 @@
         }
     };
 
+    
+
 // **********************************************************
+
+// sort LL in K groups : 
+
+int length(Node<int> *head){
+    int len =0 ;
+    while(head != NULL){
+        len ++ ;
+        head = head ->next ;
+    }
+    return len ;
+}
+
+Node<int>* kReverse(Node<int>* head, int k) {
+    // Write your code here.
+
+    if(head == NULL || head ->next == NULL){
+        return head ;
+    }
+
+    int count= 0 ;
+    Node<int>* curr = head ;
+    Node<int>* pre = NULL ;
+    while(curr != NULL && count < k){
+        Node<int> *forw = curr->next ;
+        curr->next = pre ;
+        pre = curr ;
+        curr = forw ;
+        count ++ ;
+    }
+
+    int value = length(curr) ;
+    if(curr != NULL && value >= k){
+        head->next = kReverse(curr,k) ;
+    }
+    else{
+        head->next = curr ;
+    }
+    return pre ;
+}
+
+// Merge two sorted linkedlist 
+
 Node<int>* solve(Node<int>* first ,Node<int>* second ){
     Node<int>* curr1 = first  ;
     Node<int>* next1 = curr1->next ;
