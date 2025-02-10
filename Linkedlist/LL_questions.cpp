@@ -1,5 +1,6 @@
 #include <iostream>
 #include <unordered_map> 
+#include <vector>
 using namespace std ;
 
 
@@ -29,32 +30,39 @@ using namespace std ;
 
 // **********************************************************
 
-// remove DUPLICATES in LL (2nd Approach )
-Node<int> *removeDuplicates(Node<int> *head)
+//  PALINDROME IN LINKEDLIST (using array creation)
+// T.C = O(n) & S.C= O(n)[creating n size array] ;
+bool checkpalindrome(vector<int> arr){
+    int size = arr.size() ;
+    int i =0 ;
+    int e = size-1 ;
+    while(i<=e){
+        if(arr[i] != arr[e]){
+            return false ;
+        }
+        i++ ;
+        e-- ;
+    }
+    return true ;
+}
+
+bool isPalindrome(Node<int> *head)
 {
-    if(head ==NULL || head->next == NULL){
-        return head ;
+    if(head->next == NULL){
+        return true ;
     }
-
-    unordered_map<int,bool> duplicate ;
-    Node<int> *temp = head ;
-    Node<int>* pre = NULL ;
+    vector<int> arr ;
+    Node<int>* temp = head ;
     while(temp != NULL){
-        if(duplicate[temp->data] == true){
-            pre->next = temp->next ;
-            Node<int>* next_next = temp->next  ;
-            delete temp ;
-            temp = next_next ;
-            // continue ;
-        }
-        else{
-        duplicate[temp->data] = true ;
-        pre = temp ;
+        arr.push_back(temp->data ) ;
         temp = temp->next ;
-        }
-
     }
-    return head ;
+    if(checkpalindrome(arr)){
+        return true ;
+    }
+    else{
+        return false ;
+    }
 }
 
 // Merge two sorted linkedlist 
