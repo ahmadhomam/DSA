@@ -13,6 +13,7 @@ using namespace std ;
         public:
         T data;
         Node* next;
+        Node* random ;
 
         Node(T data) {
             next = NULL;
@@ -30,66 +31,42 @@ using namespace std ;
 
 // **********************************************************
 
-// ADD TWO NUMBERS AS LINKED LIST :
-/*  step1 : reverse both the linked list ;
-    step2 : add each element using(sum,digit,carry) and put this new linkedlist (insertattail) ;
-    step3 : again reverse the Linkedlist ;
-*/
+// CLONE A LINKEDLIST WITH RANDOM POINTERS ;
 
-//T.C = O(n)[reverse]+O(m)[reverse]+O(max(n,m))[traverse for sum]+O(n+m)[max size of ans LL] = O(n+m)
-//S.C = O(max(n,m))[making ans LL ] ;
-
-Node<int>* reverse(Node<int>* head ){
-    if(head ==NULL || head->next == NULL)
-    return head ;
-
-    Node<int>* chotahead = reverse(head->next ) ;
-    head->next->next = head ;
-    head->next = NULL ;
-    return chotahead ;
+// step 1 : create an linkedlist and mapping corresponding element to the LL ;
+// step2 : then the random of clone element = map[original->random] ;
+#include <unordered_map> 
+void insertattail(Node<int>* &head ,Node<int>* &tail,int value){
+	Node<int>* temp = new Node<int>(value) ;
+	if(head == NULL){
+		head = temp ;
+		tail = temp ;
+		return ;
+	}
+	tail->next = temp ;
+	tail = temp ;
 }
 
-void inserattail(Node<int>* &head,Node<int>* &tail ,int value){
-    Node<int>* temp = new Node<int>(value) ;
-    if(head == NULL){
-        head = temp ;
-        tail = temp ;
-        return ;
-    }
-    tail->next = temp ;
-    tail = temp ;
+Node<int> *cloneLL(Node<int> *head){
+	Node<int> *temp = head ;
+	Node<int>* clonehead = NULL ;
+	Node<int>* clonetail = NULL ;
+	unordered_map<Node<int>*,Node<int>*> oldnew ;
+	while(temp != NULL){
+		insertattail(clonehead,clonetail,temp->data) ;
+		oldnew[temp] = clonetail ;
+		temp = temp->next ;
+	}
+	temp = head ;
+	Node<int>* temp2 = clonehead ;
+	while(temp2 != NULL){
+		temp2->random = oldnew[temp->random] ;
+		temp2= temp2->next ;
+		temp = temp->next ;
+	}
+	return clonehead ;
 }
 
-Node<int>* addTwoLists(Node<int>* first, Node<int>* second) {
-    first = reverse(first) ;
-    second = reverse(second) ;
-
-    Node<int>* anshead = NULL ;
-    Node<int>* anstail = NULL ;
-
-
-    int carry = 0 ;
-    while(first != NULL || second != NULL || carry != 0){
-        int val1 = 0 , val2 = 0 ;
-        if(first != NULL)
-        val1 = first->data ;
-        if(second != NULL)
-        val2 = second->data ;
-
-        int sum = val1 + val2 + carry ;
-        int digit = sum % 10 ;
-        inserattail(anshead,anstail,digit) ;
-        carry = sum /10 ;
-
-        if(first != NULL)
-        first = first->next ;
-
-        if(second != NULL)
-        second = second->next ;
-    }
-    anshead = reverse(anshead) ;
-    return anshead ;
-}
 
 // Merge two sorted linkedlist 
 
