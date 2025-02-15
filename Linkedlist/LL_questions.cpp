@@ -30,72 +30,65 @@ using namespace std ;
 
 // **********************************************************
 
-//  PALINDROME IN LINKEDLIST )
-// T.C = O(n)+ O(n) + O(n/2) == O(n) & S.C= O(1)[creating n size array] ;
-Node<int>* getmid(Node<int>* head){
-    Node<int>* slow = head ;
-    Node<int>* fast = head->next  ;
-    while(fast != NULL){
-        fast = fast->next ;
-        if(fast != NULL){
-            fast = fast->next ;
-        }
-        slow = slow ->next ;
-    }
-    return slow ;
-}
+// ADD TWO NUMBERS AS LINKED LIST :
+/*  step1 : reverse both the linked list ;
+    step2 : add each element using(sum,digit,carry) and put this new linkedlist (insertattail) ;
+    step3 : again reverse the Linkedlist ;
+*/
 
-Node<int>* reverse(Node<int>* head){
-    if(head == NULL || head->next == NULL){
-        return head ;
-    }
-    Node<int>* temp = head ;
-    Node<int>* chotahead = reverse(temp->next ) ;
-    temp->next->next = temp  ;
-    temp ->next = NULL ;
+//T.C = O(n)[reverse]+O(m)[reverse]+O(max(n,m))[traverse for sum]+O(n+m)[max size of ans LL] = O(n+m)
+//S.C = O(max(n,m))[making ans LL ] ;
+
+Node<int>* reverse(Node<int>* head ){
+    if(head ==NULL || head->next == NULL)
+    return head ;
+
+    Node<int>* chotahead = reverse(head->next ) ;
+    head->next->next = head ;
+    head->next = NULL ;
     return chotahead ;
 }
-/*
-Node* reverse(Node* head) {
-        
-        Node* curr = head;
-        Node* prev = NULL;
-        Node* next = NULL;
-        
-        while(curr != NULL) {
-            next = curr -> next;
-            curr -> next = prev;
-            prev = curr;
-            curr = next;
-        }
-        return prev;
-    }*/
 
-bool isPalindrome(Node<int> *head)
-{
-    // 1: find the mid 
-    // 2: reverse the Linkedlist from mid ;
-    // 3: check if all the data is same or not ;
-    // return true (but also rearrange the LL
-
-    if(head->next == NULL){
-        return true ;
+void inserattail(Node<int>* &head,Node<int>* &tail ,int value){
+    Node<int>* temp = new Node<int>(value) ;
+    if(head == NULL){
+        head = temp ;
+        tail = temp ;
+        return ;
     }
-    Node<int> *mid = getmid(head) ;
-    Node<int>* temp = mid->next ;
-    mid->next = reverse(temp) ;
+    tail->next = temp ;
+    tail = temp ;
+}
 
-    Node<int>* head1 = head ;
-    Node<int>* head2 = mid->next ;
-    while(head2 != NULL){
-        if(head1->data != head2->data){
-            return false ;
-        }
-        head1= head1->next ;
-        head2 = head2->next ;
+Node<int>* addTwoLists(Node<int>* first, Node<int>* second) {
+    first = reverse(first) ;
+    second = reverse(second) ;
+
+    Node<int>* anshead = NULL ;
+    Node<int>* anstail = NULL ;
+
+
+    int carry = 0 ;
+    while(first != NULL || second != NULL || carry != 0){
+        int val1 = 0 , val2 = 0 ;
+        if(first != NULL)
+        val1 = first->data ;
+        if(second != NULL)
+        val2 = second->data ;
+
+        int sum = val1 + val2 + carry ;
+        int digit = sum % 10 ;
+        inserattail(anshead,anstail,digit) ;
+        carry = sum /10 ;
+
+        if(first != NULL)
+        first = first->next ;
+
+        if(second != NULL)
+        second = second->next ;
     }
-    return true ;
-
+    anshead = reverse(anshead) ;
+    return anshead ;
 }
 
 // Merge two sorted linkedlist 
