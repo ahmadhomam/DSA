@@ -67,6 +67,66 @@ Node<int> *cloneLL(Node<int> *head){
 	return clonehead ;
 }
 
+// 2nd APPROACH :
+Node<int>* cloneLL(Node<int>* head) {
+
+	//STEP 1 = CLONE LINKEDLIST USING NEXT POINTER ;
+    if(head == NULL)
+    return NULL ;
+    Node<int>* temp = head ;
+    Node<int>* clonehead = NULL ;
+    Node<int>* clonetail = NULL ;
+    while(temp != NULL){
+        insertattail(clonehead,clonetail,temp->data) ;
+        temp = temp->next ;
+    }
+
+	//STEP 2 = CONNECTING THE ELEMENTS CORRESPONDINGLY ;
+    Node<int>* temp1 = head ;
+    Node<int>* temp2 = clonehead ;
+    Node<int>* next1 = temp1->next ;
+    Node<int>* next2 = temp2->next ;
+    while(temp1 != NULL && temp2 != NULL){
+        temp1->next = temp2 ;
+        temp2->next = next1 ;
+        temp1 = next1  ;
+        temp2 = next2  ;
+        if(next1 != NULL)
+        next1 = next1->next ;
+        if(next2 != NULL)
+        next2 = next2->next ;
+    }
+
+	//STEP 3 =  NOW POINTING THE RANDOM POINTERS WITH THE HELP OF CONNECTIONS ;
+    temp = head ;
+    // temp2 = clonehead ;
+    while(temp != NULL){
+            if(temp->next != NULL){
+				if(temp->random != NULL)
+        		temp->next->random = temp->random ;
+				else{
+					temp->next->random = NULL ;
+				}
+            }
+        temp = temp->next ->next ;
+    }
+
+	//STEP 4 = RECONNECT THE NEXT POINTER AS IT IS ;
+    temp = head ;
+    temp2 = clonehead ;
+    while(temp != NULL && temp2 != NULL){
+        temp->next = temp->next->next ;
+        temp = temp->next ;
+
+        if(temp != NULL)
+        temp2->next = temp->next ;
+        else
+        temp2->next = NULL ;
+        temp2 = temp2->next ;
+    }
+    return clonehead ;
+}
+
 
 // Merge two sorted linkedlist 
 
