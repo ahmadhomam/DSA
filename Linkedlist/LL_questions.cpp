@@ -14,6 +14,7 @@ using namespace std ;
         T data;
         Node* next;
         Node* random ;
+        Node* child ;
 
         Node(T data) {
             next = NULL;
@@ -30,6 +31,52 @@ using namespace std ;
     
 
 // **********************************************************
+
+// FLATTERN A LINKED LIST USING THE TECHNIQUE OF (MERGE TWO SORTED LL) .
+
+Node<int>* merge(Node<int>* first ,Node<int>* second ){
+    if(first == nullptr)
+    return second ;
+
+    if(second == nullptr)
+    return second ;
+
+        Node<int>* newnode = new Node<int>(-1) ;
+        Node<int>* temp = newnode ;
+    while(first != nullptr && second != nullptr){
+        if(first->data < second->data){
+            temp->child = first ;
+            temp = first ;
+            first = first->child ;
+        }
+        else{
+            temp->child = second ;
+            temp = second ;
+            second = second->child ;
+        }
+    }
+    while(first != nullptr){
+        temp->child = first ;
+        temp = first ;
+        first = first->child ;
+    }
+    while(second != nullptr){
+        temp->child = second ;
+        temp = second ;
+        second = second->child ;
+    }
+    return newnode->child ;
+}
+
+Node<int>* flattenLinkedList(Node<int>* head) 
+{
+   if(head == nullptr || head->next == nullptr)
+   return head ;
+
+   Node<int>* right = flattenLinkedList(head->next) ;
+   head->next = NULL ;
+   return merge(head,right ) ;
+}
 
 // CLONE A LINKEDLIST WITH RANDOM POINTERS ;
 
