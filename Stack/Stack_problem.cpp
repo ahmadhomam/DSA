@@ -72,3 +72,26 @@ void solve (stack<int>&inputStack, int N,int count){
     }
 }
 
+
+
+//PUSH ELEMENT AT THE BOTTOM OF STACK 
+void solve(stack<int>& myStack, int x){
+    if(myStack.size() ==0){
+        myStack.push(x) ;
+        return ;
+    }
+    int num = myStack.top() ;
+    myStack.pop() ;
+    solve(myStack,x) ;
+    myStack.push(num) ;
+
+}
+stack<int> pushAtBottom(stack<int>& myStack, int x) 
+{
+    //solving through recursion ;
+
+    solve(myStack,x) ;
+    return myStack ;
+}
+
+
