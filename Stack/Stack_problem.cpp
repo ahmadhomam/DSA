@@ -39,3 +39,36 @@ void solve (stack<int>&inputStack, int N,int count){
     int count =0 ;
     solve(inputStack,N,count) ;
  }
+
+
+
+// CHECKING THE STRING IS BALANCED OR NOT
+ bool isValidParenthesis(string s)
+{
+    int Size = s.size() ;
+    stack<char> check ;
+    int i=0 ;
+    while(i<Size){
+        char temp = s[i] ;
+
+        if(temp == '(' || temp == '[' || temp == '{')
+        check.push(temp) ;
+
+       else if(check.size() == 0)
+       return false ;
+
+        else{
+        if((temp == ')' && check.top() == '(') ||
+        (temp == '}' && check.top() == '{') ||
+        (temp == ']' && check.top() == '[')){
+            check.pop() ;
+        }
+        }
+        
+        i++ ;
+    }
+    if(check.empty() == true){
+        return true ;
+    }
+}
+
