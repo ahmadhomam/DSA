@@ -2,74 +2,56 @@
 #include<stack>
 using namespace std;
 
-class Stack {
-    //properties
-    public:
-        int *arr;
-        int top;
-        int size;
 
-    // behaviour
-    Stack(int size) {
-        this -> size = size;
-        arr = new int[size];
-        top = -1;
-    }
 
-    void push( int element) {
-        if(size - top > 1) {
-            top++;
-            arr[top] = element;
-        }
-        else{
-            cout << "Stack OverFlow" << endl;
-        }
-    }
-
-    void pop() {
-        if(top >=0 ) {
-            top--;
-        }
-        else{
-            cout << "Stack UnderFlow" << endl;
-        }
-    }
-
-    int peek() {
-        if(top >=0 )
-            return arr[top];
-        else
-        {
-            cout << "Stack is Empty" << endl;
-            return -1;
-        }
-    }
-
-    bool isEmpty() {
-        if( top == -1) {
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
-};
-
-int main(){
-    Stack s_height(5) ;
-    s_height.push(4) ;
-    cout<<"the size is : "<<s_height.size<<endl ;
-    cout<<"the peek of stack is : "<<s_height.peek()<<endl ;
-    s_height.push(11) ;
+    class Node{
+        public :
+        int data ;
+        Node* next ;
     
-    cout<<"the peek of stack is : "<<s_height.peek()<<endl ;
-    s_height.pop() ;
-
-    cout<<"the peek of stack is : "<<s_height.peek()<<endl ;
-    cout<<"Is stack is empty : "<<s_height.isEmpty()<<endl ;
-    s_height.pop() ;
-    s_height.pop() ;
-    cout<<"Is stack is empty : "<<s_height.isEmpty()<<endl ;
+        Node(int data){
+            this->data = data ;
+            this->next = NULL ;
+        }
+    
+    } ;
+    
+    
+    // IMPLEMENTING STACK USING LINKED LIST ;
+    class Stack{
+    
+        public :
+        int size =0;
+        Node* top = NULL ;
+    
+    
+        void push(int element ){
+                size ++ ;
+                Node* temp = new Node(element) ;
+                temp->next = top ;
+                top = temp  ;
+            
+        }
+    
+        void pop(){
+            Node* temp = top ;
+            top= top->next ;
+            delete temp ;
+            size -- ;
+            
+        }
+    } ;
+    
+    int main(){
+        Stack s_height ;
+        s_height.push(4) ;
+        cout<<"the size is : "<<s_height.size<<endl ;
+        s_height.push(7) ;
+        cout<<"the size is : "<<s_height.size<<endl ;
+        s_height.push(1) ;
+        cout<<"the size is : "<<s_height.size<<endl ;
+        cout<<"the top is at : "<<s_height.top->data<<endl ;
+        s_height.pop() ;
+        cout<<"the top is at : "<<s_height.top->data<<endl ;
 
 }
