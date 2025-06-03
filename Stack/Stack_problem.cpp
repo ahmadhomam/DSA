@@ -74,24 +74,28 @@ void solve (stack<int>&inputStack, int N,int count){
 
 
 
-//PUSH ELEMENT AT THE BOTTOM OF STACK 
-void solve(stack<int>& myStack, int x){
-    if(myStack.size() ==0){
-        myStack.push(x) ;
+//REVERSE A STACK USING RECURSION.
+void insertatbottom(stack<int> &stack,int x){
+    if(stack.size() == 0){
+        stack.push(x) ;
         return ;
     }
-    int num = myStack.top() ;
-    myStack.pop() ;
-    solve(myStack,x) ;
-    myStack.push(num) ;
-
+    int num = stack.top() ;
+    stack.pop() ;
+    insertatbottom(stack,x) ;
+    stack.push(num) ;
 }
-stack<int> pushAtBottom(stack<int>& myStack, int x) 
-{
-    //solving through recursion ;
 
-    solve(myStack,x) ;
-    return myStack ;
+
+void reverseStack(stack<int> &stack) {
+    if(stack.size() ==0){
+        return ;
+    }
+    int bottom  = stack.top() ;
+    stack.pop(); 
+    reverseStack(stack) ;
+
+    insertatbottom(stack,bottom) ;
 }
 
 
