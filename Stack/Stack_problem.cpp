@@ -74,24 +74,32 @@ void solve (stack<int>&inputStack, int N,int count){
 
 
 
-// SORT STACK USING RECURSION 
-void insertinsorted(stack<int> &stack,int n){
-	if(stack.size()== 0 || stack.top()<= n){
-		stack.push(n) ;
-		return ;
-	}
-	int temp = stack.top() ;
-	stack.pop() ;
-	insertinsorted(stack,n) ;
-	stack.push(temp) ;
-}
-void sortStack(stack<int> &stack)
+// IS REBUNDANT BRACKET OR NOT
+bool findRedundantBrackets(string &s)
 {
-	if(stack.empty()){
-		return ;
-	}
-	int num = stack.top() ;
-	stack.pop() ;
-	sortStack(stack) ;
-	insertinsorted(stack,num) ;
+    stack<char > bra ;
+    bool isredundant = true ;
+    for(int i = 0;i<s.size();i++){
+        char ch = s[i] ;
+        if(ch == '(' ||ch == '+' ||ch == '-' ||ch == '*' ||ch == '/'){
+            bra.push(ch) ;
+        }
+        else{
+            if(ch == ')'){
+                bool isredundant = true ;
+                while(bra.top() != '('){
+                char top = bra.top() ;
+                    if(top == '+' ||top == '-' ||top == '*' ||top == '/'){
+                        isredundant = false ;
+                    }
+                bra.pop() ;
+                }
+                if(isredundant == true){
+                    return true ;
+                }
+                bra.pop() ;
+            }
+        }
+    }
+    return false ;
 }
