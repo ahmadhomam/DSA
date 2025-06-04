@@ -74,28 +74,24 @@ void solve (stack<int>&inputStack, int N,int count){
 
 
 
-//REVERSE A STACK USING RECURSION.
-void insertatbottom(stack<int> &stack,int x){
-    if(stack.size() == 0){
-        stack.push(x) ;
-        return ;
-    }
-    int num = stack.top() ;
-    stack.pop() ;
-    insertatbottom(stack,x) ;
-    stack.push(num) ;
+// SORT STACK USING RECURSION 
+void insertinsorted(stack<int> &stack,int n){
+	if(stack.size()== 0 || stack.top()<= n){
+		stack.push(n) ;
+		return ;
+	}
+	int temp = stack.top() ;
+	stack.pop() ;
+	insertinsorted(stack,n) ;
+	stack.push(temp) ;
 }
-
-
-void reverseStack(stack<int> &stack) {
-    if(stack.size() ==0){
-        return ;
-    }
-    int bottom  = stack.top() ;
-    stack.pop(); 
-    reverseStack(stack) ;
-
-    insertatbottom(stack,bottom) ;
+void sortStack(stack<int> &stack)
+{
+	if(stack.empty()){
+		return ;
+	}
+	int num = stack.top() ;
+	stack.pop() ;
+	sortStack(stack) ;
+	insertinsorted(stack,num) ;
 }
-
-
