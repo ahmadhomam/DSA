@@ -123,63 +123,45 @@ vector<int> nextSmallerElement(vector<int> &arr, int n)
     return ans ;
 }
 
-// AREA OF THE LARGEST RECTANGLE IN HISTOGRAM
+// CELEBRITY PROBLEM :
 class Solution {
-private:
-vector<int>nextsmallerelement(vector<int>arr,int n){
-    stack<int> st ;
-    st.push(-1) ;
-    vector<int> ans(n) ;
-
-    for(int i =n-1;i>=0;i--){
-        int curr = arr[i] ;
-        while(st.top() != -1 && arr[st.top()]>= curr){
-            st.pop() ;
-        }
-        ans[i]  = st.top() ;
-        st.push(i) ;
+  private: 
+    bool knows(int i,int j,vector<vector<int> >& mat){
+        if(mat[i][j] == 1)
+        return true ;
+        else
+        return false ;
     }
-    return ans ;
-}
-
-vector<int>previoussmallerelement(vector<int>arr,int n){
-    stack<int> st ;
-    st.push(-1) ;
-    vector<int> ans(n) ;
-
-    for(int i =0;i<n;i++){
-        int curr = arr[i] ;
-        while(st.top() != -1 && arr[st.top()]>= curr){
-            st.pop() ;
+  public:
+    int celebrity(vector<vector<int> >& mat) {
+        // code here
+        stack<int> st ;
+        int n = mat[0].size() ;
+        for(int i =0;i<n;i++){
+            st.push(i) ;
         }
-        ans[i]  = st.top() ;
-        st.push(i) ;
-    }
-    return ans ;
-}
-
-public:
-    int largestRectangleArea(vector<int>& heights) {
-        int n = heights.size() ;
-        int area = INT_MIN ;
-
-        vector<int>next(n) ;
-        next = nextsmallerelement(heights,n) ;
-
-        vector<int>previous(n) ;
-        previous = previoussmallerelement(heights,n) ;
-
-        for(int i=0;i<n;i++){
-          int l = heights[i] ;
-            if(next[i] == -1)
-            next[i] = n;
-            int b = next[i] -previous[i] -1 ;
-  
-
-            int newarea = l*b ;
-            area = max(area,newarea) ;
-        }
-        return area ;
         
+        while(st.size() > 1){
+        int a = st.top() ;
+        st.pop() ;
+        int b = st.top() ;
+        st.pop() ;
+            if(knows(a,b,mat)){
+            st.push(b) ;
+        }
+        else{
+            st.push(a) ;
+        }
+        }
+        int potential = st.top() ;
+        
+        for(int i = 0; i < n; i++) {
+            if(i != potential) {
+                if(mat[potential][i] == 1 || mat[i][potential] == 0)
+                    return -1;
+            }
+        }
+        return potential;
+
     }
 };
