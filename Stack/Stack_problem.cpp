@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stack>
+#include <vector>
 using namespace std ;
 
 //REVERSE A STRING USING STACK :
@@ -104,42 +105,19 @@ bool findRedundantBrackets(string &s)
     return false ;
 }
 
-//MINIMUM COST TO MAKE THE STRIGN VALID (HAVING BRACKETS ONLY):
-#include <bits/stdc++.h> 
-int findMinimumCost(string str) {
-  stack<char> st ;
-  int size = str.size() ;
-
-  if(size %2 != 0)
-  return -1 ;
-
-  for (int i= 0 ;i<str.size();i++){
-    char ch = str[i] ;
-
-    if(ch == '{'){
-      st.push(ch) ;
+// NEXT SMALLER ELEMENT : 
+vector<int> nextSmallerElement(vector<int> &arr, int n)
+{
+    stack<int> st ;
+    vector<int>ans(n) ;
+    st.push(-1) ;
+    for(int i = n-1;i>=0;i--){
+        int curr = arr[i] ;
+        while(st.top() >= curr){
+            st.pop() ;
+        }
+        ans[i] = st.top() ;
+        st.push(curr) ;
     }
-    else{
-      // ch is a closed bracket
-      if( !st.empty() && st.top() == '{' ){
-        st.pop() ;
-      }
-      else
-      st.push(ch) ;
-    }
-  }
-
-  int a=0 ,b = 0;
-  while(!st.empty()){
-    if(st.top() == '{'){
-      a++ ;
-    }
-    else{
-      b++ ;
-    }
-    st.pop() ;
-  }
-
-  int ans = (a+1)/2 + (b+1)/2 ;
-  return ans ;
+    return ans ;
 }
