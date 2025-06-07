@@ -165,3 +165,78 @@ class Solution {
 
     }
 };
+
+//MAXIMUM AREA OF RECTANGLE IN MATRIX.
+class Solution {
+  private:
+    vector<int>nextelement(vector<int>arr,int n){
+    stack<int> st ;
+    st.push(-1) ;
+    vector<int> ans(n) ;
+
+    for(int i =n-1;i>=0;i--){
+        int curr = arr[i] ;
+        while(st.top() != -1 && arr[st.top()]>= curr){
+            st.pop() ;
+        }
+        ans[i]  = st.top() ;
+        st.push(i) ;
+    }
+    return ans ;
+    }
+    
+    vector<int>prevelement(vector<int>arr,int n){
+    stack<int> st ;
+    st.push(-1) ;
+    vector<int> ans(n) ;
+
+    for(int i =0;i<n;i++){
+        int curr = arr[i] ;
+        while(st.top() != -1 && arr[st.top()]>= curr){
+            st.pop() ;
+        }
+        ans[i]  = st.top() ;
+        st.push(i) ;
+    }
+    return ans ;
+    }
+    
+    int maxarea(vector<int>arr,int n){
+            int area = 0 ;
+            vector<int>next(n);
+            next = nextelement(arr,n) ;
+            
+            vector<int>prev(n);
+            prev= prevelement(arr,n) ;
+        for(int i =0;i<n;i++){
+            
+            int l = arr[i] ;
+            if(next[i] == -1) next[i] = n ;
+            int b = next[i] - prev[i] -1 ;
+            int newarea = l*b ;
+            area = max(area,newarea) ;
+            
+        }
+        return area ;
+    }
+  public:
+    int maxArea(vector<vector<int>> &mat) {
+        int n = mat.size() ;
+        int m = mat[0].size() ;
+        int area = maxarea(mat[0],m) ;
+        
+        for(int i =1;i<n;i++){
+            for(int j=0;j<m;j++){
+                if(mat[i][j] != 0){
+                    mat[i][j] = mat[i][j]+ mat[i-1][j] ;
+                }
+                else{
+                    mat[i][j] = 0 ;
+                }
+            }
+            area = max(area,maxarea(mat[i],m)) ;
+        }
+        return area ;
+        
+    }
+};
