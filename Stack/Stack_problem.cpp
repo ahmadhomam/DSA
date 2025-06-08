@@ -166,77 +166,70 @@ class Solution {
     }
 };
 
-//MAXIMUM AREA OF RECTANGLE IN MATRIX.
-class Solution {
-  private:
-    vector<int>nextelement(vector<int>arr,int n){
-    stack<int> st ;
-    st.push(-1) ;
-    vector<int> ans(n) ;
-
-    for(int i =n-1;i>=0;i--){
-        int curr = arr[i] ;
-        while(st.top() != -1 && arr[st.top()]>= curr){
-            st.pop() ;
-        }
-        ans[i]  = st.top() ;
-        st.push(i) ;
-    }
-    return ans ;
-    }
+// IMPLEMENT 'N' STACK USING SINGLE ARRAY OF SIZE 'S'
+class NStack
+{
     
-    vector<int>prevelement(vector<int>arr,int n){
-    stack<int> st ;
-    st.push(-1) ;
-    vector<int> ans(n) ;
+public:
+    // Initialize your data structure.
+    int *arr  ;
+    int *top ;
+    int *next ;
 
-    for(int i =0;i<n;i++){
-        int curr = arr[i] ;
-        while(st.top() != -1 && arr[st.top()]>= curr){
-            st.pop() ;
+    int freespot  ;
+    NStack(int N, int S)
+    {
+        arr = new int[S] ;
+        top = new int[N] ;
+        next = new int[S] ;
+
+        for(int i=0 ;i<S ;i++){
+            next[i] = i+1 ;
         }
-        ans[i]  = st.top() ;
-        st.push(i) ;
-    }
-    return ans ;
-    }
-    
-    int maxarea(vector<int>arr,int n){
-            int area = 0 ;
-            vector<int>next(n);
-            next = nextelement(arr,n) ;
-            
-            vector<int>prev(n);
-            prev= prevelement(arr,n) ;
-        for(int i =0;i<n;i++){
-            
-            int l = arr[i] ;
-            if(next[i] == -1) next[i] = n ;
-            int b = next[i] - prev[i] -1 ;
-            int newarea = l*b ;
-            area = max(area,newarea) ;
-            
+        next[S-1] = -1 ;
+
+        for(int i =0;i<N;i++){
+            top[i] = -1 ;
         }
-        return area ;
+
+        freespot = 0 ;
+
     }
-  public:
-    int maxArea(vector<vector<int>> &mat) {
-        int n = mat.size() ;
-        int m = mat[0].size() ;
-        int area = maxarea(mat[0],m) ;
-        
-        for(int i =1;i<n;i++){
-            for(int j=0;j<m;j++){
-                if(mat[i][j] != 0){
-                    mat[i][j] = mat[i][j]+ mat[i-1][j] ;
-                }
-                else{
-                    mat[i][j] = 0 ;
-                }
-            }
-            area = max(area,maxarea(mat[i],m)) ;
+
+    // Pushes 'X' into the Mth stack. Returns true if it gets pushed into the stack, and false otherwise.
+    bool push(int x, int m)
+    {
+        if(freespot == -1){
+            //stack overflow ;
+            return false ;
         }
-        return area ;
-        
+        //step1: find the freespot ;
+        int index = freespot ;
+        //step2 : update the freespot ;
+        freespot = next[index] ;
+        //step3: push the element at index ;
+        arr[index ]  = x ;
+        //step4: update the next element ;
+        next[index] = top[m-1] ;
+        //step5: update the top ;
+        top[m-1] = index ;
+
+        return true ;
+    }
+
+    // Pops top element from Mth Stack. Returns -1 if the stack is empty, otherwise returns the popped element.
+    int pop(int m)
+    {
+        if(top[m-1] == -1){
+            //stack underflow
+            return -1 ;
+        }
+        int index = top[m-1] ;
+        top[m-1] = next[index] ;
+        int x = arr[index] ;
+        next[index] = freespot ;
+        freespot = index ;
+
+        return x ;
     }
 };
