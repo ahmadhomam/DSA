@@ -123,113 +123,50 @@ vector<int> nextSmallerElement(vector<int> &arr, int n)
     return ans ;
 }
 
-// CELEBRITY PROBLEM :
-class Solution {
-  private: 
-    bool knows(int i,int j,vector<vector<int> >& mat){
-        if(mat[i][j] == 1)
-        return true ;
-        else
-        return false ;
-    }
-  public:
-    int celebrity(vector<vector<int> >& mat) {
-        // code here
-        stack<int> st ;
-        int n = mat[0].size() ;
-        for(int i =0;i<n;i++){
-            st.push(i) ;
-        }
+// Design a stack that supports getMin() in O(1) time and O(1) extra space
+class SpecialStack {
+    public:
+    int mini = INT_MAX;
+    stack<int>s ;
         
-        while(st.size() > 1){
-        int a = st.top() ;
-        st.pop() ;
-        int b = st.top() ;
-        st.pop() ;
-            if(knows(a,b,mat)){
-            st.push(b) ;
+    void push(int data) {
+        if(s.empty()){
+            s.push(data) ;
+            mini = data ;
         }
         else{
-            st.push(a) ;
-        }
-        }
-        int potential = st.top() ;
-        
-        for(int i = 0; i < n; i++) {
-            if(i != potential) {
-                if(mat[potential][i] == 1 || mat[i][potential] == 0)
-                    return -1;
+            if(data < mini){
+                s.push(2*data - mini);
+                mini = data ;
+            }
+            else{
+                s.push(data) ;
             }
         }
-        return potential;
-
-    }
-};
-
-// IMPLEMENT 'N' STACK USING SINGLE ARRAY OF SIZE 'S'
-class NStack
-{
-    
-public:
-    // Initialize your data structure.
-    int *arr  ;
-    int *top ;
-    int *next ;
-
-    int freespot  ;
-    NStack(int N, int S)
-    {
-        arr = new int[S] ;
-        top = new int[N] ;
-        next = new int[S] ;
-
-        for(int i=0 ;i<S ;i++){
-            next[i] = i+1 ;
-        }
-        next[S-1] = -1 ;
-
-        for(int i =0;i<N;i++){
-            top[i] = -1 ;
-        }
-
-        freespot = 0 ;
-
     }
 
-    // Pushes 'X' into the Mth stack. Returns true if it gets pushed into the stack, and false otherwise.
-    bool push(int x, int m)
-    {
-        if(freespot == -1){
-            //stack overflow ;
-            return false ;
-        }
-        //step1: find the freespot ;
-        int index = freespot ;
-        //step2 : update the freespot ;
-        freespot = next[index] ;
-        //step3: push the element at index ;
-        arr[index ]  = x ;
-        //step4: update the next element ;
-        next[index] = top[m-1] ;
-        //step5: update the top ;
-        top[m-1] = index ;
+    void pop() {
 
-        return true ;
+        int curr = s.top() ;
+            s.pop() ;
+        if(curr< mini){
+            int prevmini = mini ;
+            int val = 2*mini - curr ;
+            mini = val ;
+        }
     }
 
-    // Pops top element from Mth Stack. Returns -1 if the stack is empty, otherwise returns the popped element.
-    int pop(int m)
-    {
-        if(top[m-1] == -1){
-            //stack underflow
-            return -1 ;
+    int top() {
+        int curr = s.top( ) ;
+        if(curr<mini){
+            return mini ;
         }
-        int index = top[m-1] ;
-        top[m-1] = next[index] ;
-        int x = arr[index] ;
-        next[index] = freespot ;
-        freespot = index ;
-
-        return x ;
+        else{
+            return curr ;
+        }
     }
+
+    int getMin() {
+        return mini ;
+    }  
 };
