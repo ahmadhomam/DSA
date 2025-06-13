@@ -64,13 +64,45 @@ void leveloftraversal(node* root){
     }
 }
 
+//BUILDING BINARY TREE BY LEVEL ORDER TRAVERSAL
+void buildleveloftraversal(node* &root){
+    queue<node*> q ;
+    int data ;
+    cout<<"Enter the data for root : "<<endl ;
+    cin>>data ;
+    root = new node(data) ;
+    q.push(root) ;
+
+    while(!q.empty()){
+        node* temp = q.front() ;
+        q.pop() ;
+        
+        int leftdata; 
+        cout<<"Enter the left data for"<<temp->data<<endl;
+        cin>>leftdata ;
+        if(leftdata != -1){
+            temp->left = new node(leftdata) ;
+            q.push(temp->left) ;
+        }
+
+        int rightdata; 
+        cout<<"Enter the right data for"<<temp->data<<endl;
+        cin>>rightdata ;
+        if(rightdata != -1){
+            temp->right = new node(rightdata) ;
+            q.push(temp->right) ;
+        }
+    }
+}
+
 int main(){
     node* root  = NULL ;
-
-    root = Binarytree(root) ;
+    buildleveloftraversal(root) ;
+    // root = Binarytree(root) ;
     cout<<"printing the level order traversal output"<<endl ;
     leveloftraversal(root) ;
     return 0 ;
 }
 
 //1 3 7 -1 -1 11 -1 -1 5 17 -1 -1 -1
+//1 3 5 7 11 17 -1 -1 -1 -1 -1 -1 -1
