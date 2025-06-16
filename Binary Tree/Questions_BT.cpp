@@ -82,3 +82,41 @@ pair<int,int> combo(TreeNode<int>* root){
 bool isBalancedBT(TreeNode<int>* root){
     return combo(root).first ;
 }
+
+//SUM TREE :
+
+class Solution {
+  private:
+   pair<bool ,int> combo(Node* root){
+       if(root == NULL ){
+           pair<bool,int> p = make_pair(true,0) ;
+           return p ;
+       }
+       else if((root->left == NULL && root->right == NULL) ){
+           pair<bool,int> q = make_pair(true,root->data) ;
+           return q ;
+       }
+       
+       pair<bool,int> left = combo(root->left) ;
+       pair<bool,int> right = combo(root->right) ;
+       pair<bool,int> ans ;
+       
+       bool equal = left.second + right.second == root->data ;
+       
+       if(left.first && right.first && equal){
+           ans.first = true ;
+           ans.second = 2* root->data ;//left.second + right.second + root->data ;
+       }
+       else{
+           ans.first = false ;
+           ans.second =left.second + right.second + root->data ;
+       }
+       return ans ;
+   }
+   
+  public:
+    bool isSumTree(Node* root) {
+        // Your code here
+        return combo(root).first ;
+    }
+};
