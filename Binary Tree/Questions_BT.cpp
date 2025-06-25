@@ -83,40 +83,34 @@ bool isBalancedBT(TreeNode<int>* root){
     return combo(root).first ;
 }
 
-//SUM TREE :
+// K SUM PATH: no of path having sum equal to k.
 
-class Solution {
-  private:
-   pair<bool ,int> combo(Node* root){
-       if(root == NULL ){
-           pair<bool,int> p = make_pair(true,0) ;
-           return p ;
-       }
-       else if((root->left == NULL && root->right == NULL) ){
-           pair<bool,int> q = make_pair(true,root->data) ;
-           return q ;
-       }
-       
-       pair<bool,int> left = combo(root->left) ;
-       pair<bool,int> right = combo(root->right) ;
-       pair<bool,int> ans ;
-       
-       bool equal = left.second + right.second == root->data ;
-       
-       if(left.first && right.first && equal){
-           ans.first = true ;
-           ans.second = 2* root->data ;//left.second + right.second + root->data ;
-       }
-       else{
-           ans.first = false ;
-           ans.second =left.second + right.second + root->data ;
-       }
-       return ans ;
-   }
-   
-  public:
-    bool isSumTree(Node* root) {
-        // Your code here
-        return combo(root).first ;
+void solve(Node* root,int k , vector<int>&ans ,int &count ){
+        if(root == NULL)
+        return ;
+        
+        ans.push_back(root->data) ;
+        
+        int sum = 0 ;
+        
+        for(int i=ans.size()-1;i>=0;i--){
+            sum += ans[i] ;
+            if(sum == k){
+            count++ ;
+            }
+        }
+        
+        solve(root->left,k,ans,count) ;
+        solve(root->right,k,ans,count) ;
+        
+        ans.pop_back() ;
+        
     }
-};
+    int sumK(Node *root, int k) {
+        // code here
+        int count =0;
+        vector<int>ans ;
+        solve(root,k,ans,count) ;
+        
+        return count ;
+    }
