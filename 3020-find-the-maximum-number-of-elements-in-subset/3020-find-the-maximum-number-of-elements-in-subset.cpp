@@ -1,28 +1,41 @@
 class Solution {
 public:
+    typedef long long ll ;
     int maximumLength(vector<int>& nums) {
-        unordered_map<int, int> freq;
-        for (auto& n : nums)
-            freq[n]++;
+        int n = nums.size() ;
+        int maxsize = 1 ;
+        unordered_map<ll,int> map ;
 
-        int res = (freq[1] - 1) | 1;
-        freq.erase(1);
-
-        for (auto& f : freq) {
-            int n = 0, x = f.first;
-
-            int sq = sqrt(x);
-            if (sq * sq == x && freq.count(sq) && freq[sq] > 1)
-                continue;
-
-            while (x < 31623 && freq.count(x) && freq[x] > 1) {
-                n += 2;
-                x *= x;
-            }
-
-            res = fmax(res, n + ((freq.count(x) << 1) - 1));
+        for(ll num : nums){
+            map[num]++ ;
         }
 
-        return res;
+        if(map[1]%2 == 0)
+        maxsize = map[1]-1 ;
+        else
+        maxsize = map[1] ;
+
+        for(auto [num,_] : map){
+            int size = 0 ;
+            ll curr = num ;
+            
+            if (curr == 1)
+            continue ;
+
+            while(map.count(curr) && map[curr]  > 1){
+                size += 2 ;
+                curr = curr*curr ;
+            }
+
+            if(map.count(curr) == 1)
+            size += 1 ;
+            
+            else
+            size -=1 ;
+
+            maxsize = max(size,maxsize) ;
+            
+        }
+        return maxsize ;
     }
 };
