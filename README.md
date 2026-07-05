@@ -4,6 +4,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
 | [0048-rotate-image](https://github.com/ahmadhomam/DSA/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/ahmadhomam/DSA/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
@@ -78,4 +79,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2492-minimum-score-of-a-path-between-two-cities](https://github.com/ahmadhomam/DSA/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
+## Two Pointers
+|  |
+| ------- |
+| [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
+## Sorting
+|  |
+| ------- |
+| [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
 <!---LeetCode Topics End-->
