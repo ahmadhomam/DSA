@@ -5,6 +5,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
+| [0027-remove-element](https://github.com/ahmadhomam/DSA/tree/master/0027-remove-element) |
 | [0048-rotate-image](https://github.com/ahmadhomam/DSA/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/ahmadhomam/DSA/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
@@ -83,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
+| [0027-remove-element](https://github.com/ahmadhomam/DSA/tree/master/0027-remove-element) |
 ## Sorting
 |  |
 | ------- |
