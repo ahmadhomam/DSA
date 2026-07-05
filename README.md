@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0048-rotate-image](https://github.com/ahmadhomam/DSA/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/ahmadhomam/DSA/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/ahmadhomam/DSA/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0128-longest-consecutive-sequence](https://github.com/ahmadhomam/DSA/tree/master/0128-longest-consecutive-sequence) |
 | [1301-number-of-paths-with-max-score](https://github.com/ahmadhomam/DSA/tree/master/1301-number-of-paths-with-max-score) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
@@ -88,6 +89,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
 | [0027-remove-element](https://github.com/ahmadhomam/DSA/tree/master/0027-remove-element) |
+| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/ahmadhomam/DSA/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 ## Sorting
 |  |
 | ------- |
