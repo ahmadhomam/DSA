@@ -3,29 +3,29 @@ public:
     int removeCoveredIntervals(vector<vector<int>>& intervals) {
         int n = intervals.size() ;
         int left = n ;
+        int maxend = 0 ;
+        int count =0 ;
 
         if(n == 1)
         return 1 ;
 
-
-        sort(intervals.begin(),intervals.end()) ;
-        unordered_map<int,bool> map ;
-
-        for(int j=1;j<n;j++){
-            int i = 0 ;
-            while(i<j){
-                if(intervals[j][1] <= intervals[i][1] && map[j] != true){
-                left-- ;
-                map[j] = true ;
+        // sort lexicographical for first element but if the first element equal then largerend first ;
+        sort(intervals.begin(),intervals.end(),[](vector<int> &a, vector<int> &b){
+            if(a[0] == b[0]){
+                return a[1] > b[1] ;
             }
-            else{
-                if(intervals[j][0] <= intervals[i][0] && map[i] != true)
-                left-- ;
-                map[i] = true ;
-            }
-            i++ ;
+            return a[0] < b[0] ;
+        }) ;
+
+        //the intuition for this type of sorting is simple that the covering element lies first the covered element ;
+
+
+        for(int j=0;j<n;j++){
+            if(intervals[j][1] > maxend){
+                count++ ;
+                maxend = intervals[j][1] ;
             }
         }
-        return left ;
+        return count ;
     }
 };
