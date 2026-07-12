@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0905-sort-array-by-parity](https://github.com/ahmadhomam/DSA/tree/master/0905-sort-array-by-parity) |
 | [1288-remove-covered-intervals](https://github.com/ahmadhomam/DSA/tree/master/1288-remove-covered-intervals) |
 | [1301-number-of-paths-with-max-score](https://github.com/ahmadhomam/DSA/tree/master/1301-number-of-paths-with-max-score) |
+| [1331-rank-transform-of-an-array](https://github.com/ahmadhomam/DSA/tree/master/1331-rank-transform-of-an-array) |
 | [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
 | [3286-find-a-safe-walk-through-a-grid](https://github.com/ahmadhomam/DSA/tree/master/3286-find-a-safe-walk-through-a-grid) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/ahmadhomam/DSA/tree/master/3532-path-existence-queries-in-a-graph-i) |
@@ -27,6 +28,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0001-two-sum](https://github.com/ahmadhomam/DSA/tree/master/0001-two-sum) |
 | [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
 | [0128-longest-consecutive-sequence](https://github.com/ahmadhomam/DSA/tree/master/0128-longest-consecutive-sequence) |
+| [1331-rank-transform-of-an-array](https://github.com/ahmadhomam/DSA/tree/master/1331-rank-transform-of-an-array) |
 | [3532-path-existence-queries-in-a-graph-i](https://github.com/ahmadhomam/DSA/tree/master/3532-path-existence-queries-in-a-graph-i) |
 ## Union-Find
 |  |
@@ -118,6 +120,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0016-3sum-closest](https://github.com/ahmadhomam/DSA/tree/master/0016-3sum-closest) |
 | [0905-sort-array-by-parity](https://github.com/ahmadhomam/DSA/tree/master/0905-sort-array-by-parity) |
 | [1288-remove-covered-intervals](https://github.com/ahmadhomam/DSA/tree/master/1288-remove-covered-intervals) |
+| [1331-rank-transform-of-an-array](https://github.com/ahmadhomam/DSA/tree/master/1331-rank-transform-of-an-array) |
 ## String
 |  |
 | ------- |
