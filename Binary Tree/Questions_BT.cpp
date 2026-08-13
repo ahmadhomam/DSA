@@ -114,3 +114,23 @@ void solve(Node* root,int k , vector<int>&ans ,int &count ){
         
         return count ;
     }
+
+    class node{
+        public:
+
+        int data ;
+        node* left ;
+        node* right ;
+
+        node(int data){
+            this->data  =data ;
+            this->left = NULL ;
+            this->right = NULL ;
+        }
+    } ;
+
+    void binarytree(int arr[]){
+        for(int  i=0 ;i< arr.length();i++)
+
+
+    }

@@ -969,9 +969,9 @@ int wave(int a[][4],int row ,int col){
 //     }
 
 //     // cout<<"enter the element to check "<<endl ;
-//     // int target ;
-//     // cin>>target ;
-//     // if(find(arr,target,3,4)){
+//     // int 7 ;
+//     // cin>>7 ;
+//     // if(find(arr,7,3,4)){
 //     //     cout<<"the element is present "<<endl ;
 //     // }
 //     // else
@@ -1123,4 +1123,26 @@ insertionsort(arr,5) ;
 for(int i =0;i<5;i++){
     cout<<arr[i]<<" " ;
 }
+
+
+int nums[6] = {2,3,1,2,4,3} ;
+
+int ans = INT_MAX;
+        int curr = 0;
+        for(int i = 0 ; i < 6 ; i++){
+            for(int j = i ; j < 6 ; j++){
+                curr = curr + nums[j];
+                if(curr >= 7){
+                    ans = min(ans,j-i+1);
+                    curr = 0;
+                }
+            }
+            if(curr<7){
+                curr = 0;
+            }
+        }
+        if(ans == INT_MAX){
+            return 0;
+        }
+        return ans;
 }

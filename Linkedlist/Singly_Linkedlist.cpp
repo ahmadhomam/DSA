@@ -164,6 +164,8 @@ void middle(node *&head ){
     head = temp ;
 }
 
+// 2 APPROACH 
+//  1:
 bool iscircular(node *head){
     if(head == NULL){
         return true ;
@@ -177,6 +179,35 @@ bool iscircular(node *head){
     }
     return true ;
 }
+
+//  2:
+// using the same logic of fast & slow (used for detect loop(floyd's cycle) but 
+// also checking its a circular not loop by ensurig the intersection is at head :-) 
+bool isCircular(node* head){
+    if(head == NULL){
+        return true ;
+    }
+    else if(head->next == NULL){
+        return false ;
+    }
+    node* slow = head ;
+    node *fast = head ;
+    while(fast != NULL){
+        fast = fast->next ;
+        if(fast != NULL){
+            fast = fast->next ;
+        }
+        slow = slow ->next ;
+        if(slow == fast ){
+            break ;
+        }
+    }
+    if(slow == head && slow == fast){
+        return true ;
+    }
+    return false ;
+}
+
 
 bool detectloop(node * head ){
     //USING MAP ;
@@ -239,7 +270,7 @@ int main(){
     print(head) ;
     reverseLL_2(head) ;
     print(head) ;
-    //tail->next = head->next ;
+    tail->next = head->next ;
 
     // reverseLL_3(head) ;
     // print(head) ;
