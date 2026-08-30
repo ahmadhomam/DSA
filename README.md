@@ -11,6 +11,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/ahmadhomam/DSA/tree/master/0018-4sum) |
 | [0027-remove-element](https://github.com/ahmadhomam/DSA/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/ahmadhomam/DSA/tree/master/0031-next-permutation) |
+| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
 | [0048-rotate-image](https://github.com/ahmadhomam/DSA/tree/master/0048-rotate-image) |
 | [0054-spiral-matrix](https://github.com/ahmadhomam/DSA/tree/master/0054-spiral-matrix) |
 | [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
@@ -123,6 +124,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/ahmadhomam/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
 | [0877-stone-game](https://github.com/ahmadhomam/DSA/tree/master/0877-stone-game) |
 | [1301-number-of-paths-with-max-score](https://github.com/ahmadhomam/DSA/tree/master/1301-number-of-paths-with-max-score) |
@@ -146,6 +148,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0018-4sum](https://github.com/ahmadhomam/DSA/tree/master/0018-4sum) |
 | [0027-remove-element](https://github.com/ahmadhomam/DSA/tree/master/0027-remove-element) |
 | [0031-next-permutation](https://github.com/ahmadhomam/DSA/tree/master/0031-next-permutation) |
+| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
 | [0080-remove-duplicates-from-sorted-array-ii](https://github.com/ahmadhomam/DSA/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/ahmadhomam/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0567-permutation-in-string](https://github.com/ahmadhomam/DSA/tree/master/0567-permutation-in-string) |
@@ -218,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ahmadhomam/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Greedy
 |  |
@@ -227,6 +231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Monotonic Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
 | [1081-smallest-subsequence-of-distinct-characters](https://github.com/ahmadhomam/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
 ## Game Theory
 |  |
