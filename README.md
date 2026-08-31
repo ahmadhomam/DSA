@@ -21,6 +21,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0167-two-sum-ii-input-array-is-sorted](https://github.com/ahmadhomam/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
 | [0209-minimum-size-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0209-minimum-size-subarray-sum) |
 | [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
+| [0485-max-consecutive-ones](https://github.com/ahmadhomam/DSA/tree/master/0485-max-consecutive-ones) |
 | [0643-maximum-average-subarray-i](https://github.com/ahmadhomam/DSA/tree/master/0643-maximum-average-subarray-i) |
 | [0877-stone-game](https://github.com/ahmadhomam/DSA/tree/master/0877-stone-game) |
 | [0905-sort-array-by-parity](https://github.com/ahmadhomam/DSA/tree/master/0905-sort-array-by-parity) |
