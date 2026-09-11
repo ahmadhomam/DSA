@@ -1,44 +1,32 @@
 class Solution {
 public:
     vector<int> findAnagrams(string s, string p) {
+        vector<int> letters(26,0) ;
+        vector<int> count(26,0) ;
+        
         vector<int> ans ;
-        unordered_map<char,int> map ;
 
-        for(auto m : p)
-        map[m]++ ;
-    
+        for (auto ch : p)
+        letters[ch-'a']++ ;
 
-        int count = map.size() ;
+
         int j=0 ;
-        int i =0 ;
-
-        while(j < s.size()){
-            if(map.find(s[j]) != map.end()){
-            map[s[j]]--;
-
-            if(map[s[j]] == 0) 
-            count-- ;
-            }
-
+        int i=0 ;
+        while(j< s.size()) {
+            count[s[j]-'a']++ ;
+            
             if(j-i+1 < p.size())
             j++ ;
 
             else if(j-i+1 == p.size()){
-                if(count == 0)
-                ans.push_back(i) ; 
+                if(count == letters)
+                ans.push_back(i) ;
 
-                // restoring the map
-                if(map.find(s[i]) != map.end()){
-                // restoring the count 
-                if(map[s[i]] == 0){
-                    count++ ;
-                }
-                map[s[i]]++ ;
-                }
+                count[s[i]- 'a']-- ;
                 i++ ;
                 j++ ;
             }
         }
-    return ans ;
+        return ans ;
     }
 };
