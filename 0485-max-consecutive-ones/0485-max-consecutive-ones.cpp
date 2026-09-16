@@ -6,15 +6,19 @@ public:
 
         int i=0 ;
         int j=0 ;
+        int size =0 ;
         while(j<n){
-            if(nums[j] == 1){
-                maxsize = max(maxsize,j-i+1) ;
-                j++ ;
+            //calculations.
+            size++ ;
+            //invalid shrinking
+            if(nums[j] == 0){
+                size = 0 ;
+                i = j ;
             }
-            else{
-                i = j+1 ;
-                j++ ;
-            }
+            //found valid update the answer
+            maxsize = max(maxsize,size) ;
+            j++ ;
+
         }
         return maxsize ;
     }
