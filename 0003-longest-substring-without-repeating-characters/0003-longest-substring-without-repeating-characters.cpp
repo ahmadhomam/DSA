@@ -12,11 +12,13 @@ public:
             // size badhana hai (kuch mat kro)
             
 
+            // if invalid => shrink()
             while(set.find(s[j]) != set.end()){
                 set.erase(s[i]) ;
                 i++ ;
             }
 
+            //if found valid => update the answer
             maxsize = max(maxsize,j-i+1) ;
             set.insert(s[j]) ;
             j++ ;
