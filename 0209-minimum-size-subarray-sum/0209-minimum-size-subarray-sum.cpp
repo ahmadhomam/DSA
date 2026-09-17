@@ -1,24 +1,28 @@
 class Solution {
 public:
-    typedef long long ll ;
     int minSubArrayLen(int target, vector<int>& nums) {
         int n = nums.size() ;
+        int minsize = INT_MAX;
+
         int i=0 ;
-        int j=0 ;
-        int minsize = INT_MAX ;
-        long long sum = 0 ;
-        while(i<=j && j<n){
+        int j =0 ;
+        int sum = 0 ;
+        while(j<n) {
+            //calculations
             sum += nums[j] ;
+
+            //shrink till valid 
             while(sum >= target){
-                minsize =  min(minsize,j-i+1 ) ;
+                minsize = min(minsize,j-i+1) ;
+
                 sum -= nums[i] ;
-                i++  ; 
+                i++ ;
+
             }
-            j++;
+            j++ ;
+
         }
-        if(minsize != INT_MAX)
-        return minsize ;
-        else
-        return 0 ;
+
+        return minsize == INT_MAX ? 0 : minsize ;
     }
 };
