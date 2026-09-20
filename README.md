@@ -1,281 +1,49 @@
-A collection of LeetCode questions to ace the coding interview! - Created using [LeetHub v2](https://github.com/arunbhardwaj/LeetHub-2.0)
-<!---LeetCode Topics Start-->
-# LeetCode Topics
-## Array
-|  |
-| ------- |
-| [0001-two-sum](https://github.com/ahmadhomam/DSA/tree/master/0001-two-sum) |
-| [0011-container-with-most-water](https://github.com/ahmadhomam/DSA/tree/master/0011-container-with-most-water) |
-| [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
-| [0016-3sum-closest](https://github.com/ahmadhomam/DSA/tree/master/0016-3sum-closest) |
-| [0018-4sum](https://github.com/ahmadhomam/DSA/tree/master/0018-4sum) |
-| [0027-remove-element](https://github.com/ahmadhomam/DSA/tree/master/0027-remove-element) |
-| [0031-next-permutation](https://github.com/ahmadhomam/DSA/tree/master/0031-next-permutation) |
-| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
-| [0048-rotate-image](https://github.com/ahmadhomam/DSA/tree/master/0048-rotate-image) |
-| [0054-spiral-matrix](https://github.com/ahmadhomam/DSA/tree/master/0054-spiral-matrix) |
-| [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
-| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/ahmadhomam/DSA/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
-| [0121-best-time-to-buy-and-sell-stock](https://github.com/ahmadhomam/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
-| [0128-longest-consecutive-sequence](https://github.com/ahmadhomam/DSA/tree/master/0128-longest-consecutive-sequence) |
-| [0167-two-sum-ii-input-array-is-sorted](https://github.com/ahmadhomam/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
-| [0209-minimum-size-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0209-minimum-size-subarray-sum) |
-| [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
-| [0485-max-consecutive-ones](https://github.com/ahmadhomam/DSA/tree/master/0485-max-consecutive-ones) |
-| [0560-subarray-sum-equals-k](https://github.com/ahmadhomam/DSA/tree/master/0560-subarray-sum-equals-k) |
-| [0643-maximum-average-subarray-i](https://github.com/ahmadhomam/DSA/tree/master/0643-maximum-average-subarray-i) |
-| [0877-stone-game](https://github.com/ahmadhomam/DSA/tree/master/0877-stone-game) |
-| [0905-sort-array-by-parity](https://github.com/ahmadhomam/DSA/tree/master/0905-sort-array-by-parity) |
-| [1260-shift-2d-grid](https://github.com/ahmadhomam/DSA/tree/master/1260-shift-2d-grid) |
-| [1288-remove-covered-intervals](https://github.com/ahmadhomam/DSA/tree/master/1288-remove-covered-intervals) |
-| [1301-number-of-paths-with-max-score](https://github.com/ahmadhomam/DSA/tree/master/1301-number-of-paths-with-max-score) |
-| [1331-rank-transform-of-an-array](https://github.com/ahmadhomam/DSA/tree/master/1331-rank-transform-of-an-array) |
-| [2319-check-if-matrix-is-x-matrix](https://github.com/ahmadhomam/DSA/tree/master/2319-check-if-matrix-is-x-matrix) |
-| [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
-| [3286-find-a-safe-walk-through-a-grid](https://github.com/ahmadhomam/DSA/tree/master/3286-find-a-safe-walk-through-a-grid) |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/ahmadhomam/DSA/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
-| [3532-path-existence-queries-in-a-graph-i](https://github.com/ahmadhomam/DSA/tree/master/3532-path-existence-queries-in-a-graph-i) |
-| [3620-network-recovery-pathways](https://github.com/ahmadhomam/DSA/tree/master/3620-network-recovery-pathways) |
-| [3731-find-missing-elements](https://github.com/ahmadhomam/DSA/tree/master/3731-find-missing-elements) |
-## Hash Table
-|  |
-| ------- |
-| [0001-two-sum](https://github.com/ahmadhomam/DSA/tree/master/0001-two-sum) |
-| [0003-longest-substring-without-repeating-characters](https://github.com/ahmadhomam/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
-| [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
-| [0128-longest-consecutive-sequence](https://github.com/ahmadhomam/DSA/tree/master/0128-longest-consecutive-sequence) |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-| [0438-find-all-anagrams-in-a-string](https://github.com/ahmadhomam/DSA/tree/master/0438-find-all-anagrams-in-a-string) |
-| [0560-subarray-sum-equals-k](https://github.com/ahmadhomam/DSA/tree/master/0560-subarray-sum-equals-k) |
-| [0567-permutation-in-string](https://github.com/ahmadhomam/DSA/tree/master/0567-permutation-in-string) |
-| [1331-rank-transform-of-an-array](https://github.com/ahmadhomam/DSA/tree/master/1331-rank-transform-of-an-array) |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3518-smallest-palindromic-rearrangement-ii](https://github.com/ahmadhomam/DSA/tree/master/3518-smallest-palindromic-rearrangement-ii) |
-| [3532-path-existence-queries-in-a-graph-i](https://github.com/ahmadhomam/DSA/tree/master/3532-path-existence-queries-in-a-graph-i) |
-| [3731-find-missing-elements](https://github.com/ahmadhomam/DSA/tree/master/3731-find-missing-elements) |
-## Union-Find
-|  |
-| ------- |
-| [0128-longest-consecutive-sequence](https://github.com/ahmadhomam/DSA/tree/master/0128-longest-consecutive-sequence) |
-| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/ahmadhomam/DSA/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
-| [2685-count-the-number-of-complete-components](https://github.com/ahmadhomam/DSA/tree/master/2685-count-the-number-of-complete-components) |
-| [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
-| [3532-path-existence-queries-in-a-graph-i](https://github.com/ahmadhomam/DSA/tree/master/3532-path-existence-queries-in-a-graph-i) |
-## Matrix
-|  |
-| ------- |
-| [0048-rotate-image](https://github.com/ahmadhomam/DSA/tree/master/0048-rotate-image) |
-| [0054-spiral-matrix](https://github.com/ahmadhomam/DSA/tree/master/0054-spiral-matrix) |
-| [0073-set-matrix-zeroes](https://github.com/ahmadhomam/DSA/tree/master/0073-set-matrix-zeroes) |
-| [1260-shift-2d-grid](https://github.com/ahmadhomam/DSA/tree/master/1260-shift-2d-grid) |
-| [1301-number-of-paths-with-max-score](https://github.com/ahmadhomam/DSA/tree/master/1301-number-of-paths-with-max-score) |
-| [2319-check-if-matrix-is-x-matrix](https://github.com/ahmadhomam/DSA/tree/master/2319-check-if-matrix-is-x-matrix) |
-| [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
-| [3286-find-a-safe-walk-through-a-grid](https://github.com/ahmadhomam/DSA/tree/master/3286-find-a-safe-walk-through-a-grid) |
-## Math
-|  |
-| ------- |
-| [0048-rotate-image](https://github.com/ahmadhomam/DSA/tree/master/0048-rotate-image) |
-| [0877-stone-game](https://github.com/ahmadhomam/DSA/tree/master/0877-stone-game) |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/ahmadhomam/DSA/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
-| [3518-smallest-palindromic-rearrangement-ii](https://github.com/ahmadhomam/DSA/tree/master/3518-smallest-palindromic-rearrangement-ii) |
-| [3536-maximum-product-of-two-digits](https://github.com/ahmadhomam/DSA/tree/master/3536-maximum-product-of-two-digits) |
-| [3658-gcd-of-odd-and-even-sums](https://github.com/ahmadhomam/DSA/tree/master/3658-gcd-of-odd-and-even-sums) |
-| [3754-concatenate-non-zero-digits-and-multiply-by-sum-i](https://github.com/ahmadhomam/DSA/tree/master/3754-concatenate-non-zero-digits-and-multiply-by-sum-i) |
-| [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ahmadhomam/DSA/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
-## Simulation
-|  |
-| ------- |
-| [0054-spiral-matrix](https://github.com/ahmadhomam/DSA/tree/master/0054-spiral-matrix) |
-| [1260-shift-2d-grid](https://github.com/ahmadhomam/DSA/tree/master/1260-shift-2d-grid) |
-## Binary Search
-|  |
-| ------- |
-| [0167-two-sum-ii-input-array-is-sorted](https://github.com/ahmadhomam/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
-| [0209-minimum-size-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0209-minimum-size-subarray-sum) |
-| [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3532-path-existence-queries-in-a-graph-i](https://github.com/ahmadhomam/DSA/tree/master/3532-path-existence-queries-in-a-graph-i) |
-| [3620-network-recovery-pathways](https://github.com/ahmadhomam/DSA/tree/master/3620-network-recovery-pathways) |
-## Breadth-First Search
-|  |
-| ------- |
-| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/ahmadhomam/DSA/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
-| [2685-count-the-number-of-complete-components](https://github.com/ahmadhomam/DSA/tree/master/2685-count-the-number-of-complete-components) |
-| [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
-| [3286-find-a-safe-walk-through-a-grid](https://github.com/ahmadhomam/DSA/tree/master/3286-find-a-safe-walk-through-a-grid) |
-## Heap (Priority Queue)
-|  |
-| ------- |
-| [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
-| [2812-find-the-safest-path-in-a-grid](https://github.com/ahmadhomam/DSA/tree/master/2812-find-the-safest-path-in-a-grid) |
-| [3286-find-a-safe-walk-through-a-grid](https://github.com/ahmadhomam/DSA/tree/master/3286-find-a-safe-walk-through-a-grid) |
-| [3620-network-recovery-pathways](https://github.com/ahmadhomam/DSA/tree/master/3620-network-recovery-pathways) |
-## Graph Theory
-|  |
-| ------- |
-| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/ahmadhomam/DSA/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
-| [2685-count-the-number-of-complete-components](https://github.com/ahmadhomam/DSA/tree/master/2685-count-the-number-of-complete-components) |
-| [3286-find-a-safe-walk-through-a-grid](https://github.com/ahmadhomam/DSA/tree/master/3286-find-a-safe-walk-through-a-grid) |
-| [3532-path-existence-queries-in-a-graph-i](https://github.com/ahmadhomam/DSA/tree/master/3532-path-existence-queries-in-a-graph-i) |
-| [3620-network-recovery-pathways](https://github.com/ahmadhomam/DSA/tree/master/3620-network-recovery-pathways) |
-## Shortest Path
-|  |
-| ------- |
-| [3286-find-a-safe-walk-through-a-grid](https://github.com/ahmadhomam/DSA/tree/master/3286-find-a-safe-walk-through-a-grid) |
-| [3620-network-recovery-pathways](https://github.com/ahmadhomam/DSA/tree/master/3620-network-recovery-pathways) |
-## Dynamic Programming
-|  |
-| ------- |
-| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
-| [0121-best-time-to-buy-and-sell-stock](https://github.com/ahmadhomam/DSA/tree/master/0121-best-time-to-buy-and-sell-stock) |
-| [0877-stone-game](https://github.com/ahmadhomam/DSA/tree/master/0877-stone-game) |
-| [1301-number-of-paths-with-max-score](https://github.com/ahmadhomam/DSA/tree/master/1301-number-of-paths-with-max-score) |
-| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/ahmadhomam/DSA/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
-| [3620-network-recovery-pathways](https://github.com/ahmadhomam/DSA/tree/master/3620-network-recovery-pathways) |
-## Topological Sort
-|  |
-| ------- |
-| [3620-network-recovery-pathways](https://github.com/ahmadhomam/DSA/tree/master/3620-network-recovery-pathways) |
-## Depth-First Search
-|  |
-| ------- |
-| [2492-minimum-score-of-a-path-between-two-cities](https://github.com/ahmadhomam/DSA/tree/master/2492-minimum-score-of-a-path-between-two-cities) |
-| [2685-count-the-number-of-complete-components](https://github.com/ahmadhomam/DSA/tree/master/2685-count-the-number-of-complete-components) |
-## Two Pointers
-|  |
-| ------- |
-| [0011-container-with-most-water](https://github.com/ahmadhomam/DSA/tree/master/0011-container-with-most-water) |
-| [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
-| [0016-3sum-closest](https://github.com/ahmadhomam/DSA/tree/master/0016-3sum-closest) |
-| [0018-4sum](https://github.com/ahmadhomam/DSA/tree/master/0018-4sum) |
-| [0027-remove-element](https://github.com/ahmadhomam/DSA/tree/master/0027-remove-element) |
-| [0031-next-permutation](https://github.com/ahmadhomam/DSA/tree/master/0031-next-permutation) |
-| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
-| [0080-remove-duplicates-from-sorted-array-ii](https://github.com/ahmadhomam/DSA/tree/master/0080-remove-duplicates-from-sorted-array-ii) |
-| [0167-two-sum-ii-input-array-is-sorted](https://github.com/ahmadhomam/DSA/tree/master/0167-two-sum-ii-input-array-is-sorted) |
-| [0567-permutation-in-string](https://github.com/ahmadhomam/DSA/tree/master/0567-permutation-in-string) |
-| [0905-sort-array-by-parity](https://github.com/ahmadhomam/DSA/tree/master/0905-sort-array-by-parity) |
-## Sorting
-|  |
-| ------- |
-| [0015-3sum](https://github.com/ahmadhomam/DSA/tree/master/0015-3sum) |
-| [0016-3sum-closest](https://github.com/ahmadhomam/DSA/tree/master/0016-3sum-closest) |
-| [0018-4sum](https://github.com/ahmadhomam/DSA/tree/master/0018-4sum) |
-| [0905-sort-array-by-parity](https://github.com/ahmadhomam/DSA/tree/master/0905-sort-array-by-parity) |
-| [1288-remove-covered-intervals](https://github.com/ahmadhomam/DSA/tree/master/1288-remove-covered-intervals) |
-| [1331-rank-transform-of-an-array](https://github.com/ahmadhomam/DSA/tree/master/1331-rank-transform-of-an-array) |
-| [3536-maximum-product-of-two-digits](https://github.com/ahmadhomam/DSA/tree/master/3536-maximum-product-of-two-digits) |
-| [3731-find-missing-elements](https://github.com/ahmadhomam/DSA/tree/master/3731-find-missing-elements) |
-## String
-|  |
-| ------- |
-| [0003-longest-substring-without-repeating-characters](https://github.com/ahmadhomam/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-| [0438-find-all-anagrams-in-a-string](https://github.com/ahmadhomam/DSA/tree/master/0438-find-all-anagrams-in-a-string) |
-| [0567-permutation-in-string](https://github.com/ahmadhomam/DSA/tree/master/0567-permutation-in-string) |
-| [1081-smallest-subsequence-of-distinct-characters](https://github.com/ahmadhomam/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
-| [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ahmadhomam/DSA/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
-| [3499-maximize-active-section-with-trade-i](https://github.com/ahmadhomam/DSA/tree/master/3499-maximize-active-section-with-trade-i) |
-| [3518-smallest-palindromic-rearrangement-ii](https://github.com/ahmadhomam/DSA/tree/master/3518-smallest-palindromic-rearrangement-ii) |
-| [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ahmadhomam/DSA/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
-## Prefix Sum
-|  |
-| ------- |
-| [0209-minimum-size-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0209-minimum-size-subarray-sum) |
-| [0560-subarray-sum-equals-k](https://github.com/ahmadhomam/DSA/tree/master/0560-subarray-sum-equals-k) |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3756-concatenate-non-zero-digits-and-multiply-by-sum-ii](https://github.com/ahmadhomam/DSA/tree/master/3756-concatenate-non-zero-digits-and-multiply-by-sum-ii) |
-## Enumeration
-|  |
-| ------- |
-| [1291-sequential-digits](https://github.com/ahmadhomam/DSA/tree/master/1291-sequential-digits) |
-| [3499-maximize-active-section-with-trade-i](https://github.com/ahmadhomam/DSA/tree/master/3499-maximize-active-section-with-trade-i) |
-## Number Theory
-|  |
-| ------- |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3336-find-the-number-of-subsequences-with-equal-gcd](https://github.com/ahmadhomam/DSA/tree/master/3336-find-the-number-of-subsequences-with-equal-gcd) |
-| [3658-gcd-of-odd-and-even-sums](https://github.com/ahmadhomam/DSA/tree/master/3658-gcd-of-odd-and-even-sums) |
-## Combinatorics
-|  |
-| ------- |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3518-smallest-palindromic-rearrangement-ii](https://github.com/ahmadhomam/DSA/tree/master/3518-smallest-palindromic-rearrangement-ii) |
-## Counting
-|  |
-| ------- |
-| [3312-sorted-gcd-pair-queries](https://github.com/ahmadhomam/DSA/tree/master/3312-sorted-gcd-pair-queries) |
-| [3518-smallest-palindromic-rearrangement-ii](https://github.com/ahmadhomam/DSA/tree/master/3518-smallest-palindromic-rearrangement-ii) |
-## Sliding Window
-|  |
-| ------- |
-| [0003-longest-substring-without-repeating-characters](https://github.com/ahmadhomam/DSA/tree/master/0003-longest-substring-without-repeating-characters) |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-| [0209-minimum-size-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0209-minimum-size-subarray-sum) |
-| [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
-| [0438-find-all-anagrams-in-a-string](https://github.com/ahmadhomam/DSA/tree/master/0438-find-all-anagrams-in-a-string) |
-| [0567-permutation-in-string](https://github.com/ahmadhomam/DSA/tree/master/0567-permutation-in-string) |
-| [0643-maximum-average-subarray-i](https://github.com/ahmadhomam/DSA/tree/master/0643-maximum-average-subarray-i) |
-| [1456-maximum-number-of-vowels-in-a-substring-of-given-length](https://github.com/ahmadhomam/DSA/tree/master/1456-maximum-number-of-vowels-in-a-substring-of-given-length) |
-## Queue
-|  |
-| ------- |
-| [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
-## Monotonic Queue
-|  |
-| ------- |
-| [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
-## Stack
-|  |
-| ------- |
-| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
-| [1081-smallest-subsequence-of-distinct-characters](https://github.com/ahmadhomam/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
-## Greedy
-|  |
-| ------- |
-| [0011-container-with-most-water](https://github.com/ahmadhomam/DSA/tree/master/0011-container-with-most-water) |
-| [1081-smallest-subsequence-of-distinct-characters](https://github.com/ahmadhomam/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
-## Monotonic Stack
-|  |
-| ------- |
-| [0042-trapping-rain-water](https://github.com/ahmadhomam/DSA/tree/master/0042-trapping-rain-water) |
-| [1081-smallest-subsequence-of-distinct-characters](https://github.com/ahmadhomam/DSA/tree/master/1081-smallest-subsequence-of-distinct-characters) |
-## Game Theory
-|  |
-| ------- |
-| [0877-stone-game](https://github.com/ahmadhomam/DSA/tree/master/0877-stone-game) |
-## Database
-|  |
-| ------- |
-| [0181-employees-earning-more-than-their-managers](https://github.com/ahmadhomam/DSA/tree/master/0181-employees-earning-more-than-their-managers) |
-| [0570-managers-with-at-least-5-direct-reports](https://github.com/ahmadhomam/DSA/tree/master/0570-managers-with-at-least-5-direct-reports) |
-| [0577-employee-bonus](https://github.com/ahmadhomam/DSA/tree/master/0577-employee-bonus) |
-| [0584-find-customer-referee](https://github.com/ahmadhomam/DSA/tree/master/0584-find-customer-referee) |
-| [0620-not-boring-movies](https://github.com/ahmadhomam/DSA/tree/master/0620-not-boring-movies) |
-| [1068-product-sales-analysis-i](https://github.com/ahmadhomam/DSA/tree/master/1068-product-sales-analysis-i) |
-| [1378-replace-employee-id-with-the-unique-identifier](https://github.com/ahmadhomam/DSA/tree/master/1378-replace-employee-id-with-the-unique-identifier) |
-| [1661-average-time-of-process-per-machine](https://github.com/ahmadhomam/DSA/tree/master/1661-average-time-of-process-per-machine) |
-## Bit Manipulation
-|  |
-| ------- |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-## Rolling Hash
-|  |
-| ------- |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-## Hash Function
-|  |
-| ------- |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-## Z Algorithm
-|  |
-| ------- |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-## Boyer–Moore String-Search Algorithm
-|  |
-| ------- |
-| [0187-repeated-dna-sequences](https://github.com/ahmadhomam/DSA/tree/master/0187-repeated-dna-sequences) |
-<!---LeetCode Topics End-->
+<div align="center">
+
+# 🧠 Coding Solutions
+
+![Total Solved](https://img.shields.io/badge/Total_Solved-1-blue?style=for-the-badge)
+![Streak](https://img.shields.io/badge/Streak-1_days-orange?style=for-the-badge)
+![Last Synced](https://img.shields.io/badge/Last_Synced-9--20--2026-green?style=for-the-badge)
+
+> 🚀 Auto-synced by [**PushMyCode**](https://github.com/PushMyCode-HQ) — solve it, forget it, it's on GitHub.
+
+</div>
+
+---
+
+## 📊 Stats
+
+| Difficulty | Solved |
+|:---:|:---:|
+| 🟢 Easy | **0** |
+| 🟡 Medium | **1** |
+| 🔴 Hard | **0** |
+| **Total** | **1** |
+
+## 🛠️ Languages
+
+| Language | Solutions |
+|:---:|:---:|
+| C++ | **1** |
+
+## 📂 Repository Structure
+
+```
+📦 coding-solutions/
+├── leetcode/
+│   ├── easy/
+│   ├── medium/
+│   └── hard/
+├── hackerrank/
+├── codechef/
+└── gfg/
+```
+
+---
+
+<div align="center">
+
+*Last updated: 2026-09-20* · Powered by [**PushMyCode**](https://github.com/PushMyCode-HQ)
+
+</div>
