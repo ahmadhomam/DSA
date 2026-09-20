@@ -35,46 +35,47 @@ Explanation: The entire string "aabaaab" has exactly 2 unique characters 'a' and
 **Language:** C++  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-20T11:37:31.211Z  
+**Submitted:** 2026-09-20T11:38:04.025Z  
 
 ```cpp
 class Solution {
-  public:
-    int longestKSubstr(string &s, int k) {
-        // code here
-        int n = s.size() ;
-        unordered_map<char,int> freq ;
-        int maxsize = -1 ;
-        
-        int i =0 , j=0 ;
-        
-        while(j< n){
-            //calculations 
-            freq[s[j]]++ ;
-            
-            //if invalid wala case : longest size nikalna hai
-            while (freq.size() > k) {
-                            freq[s[i]]--;
-
-                            if (freq[s[i]] == 0) {
-                                freq.erase(s[i]);
-                            }
-
-                            i++;
-                        }
-            
-            //found valid 
-            if(freq.size() == k){
-                maxsize = max(maxsize, j-i+1) ;
-            }
-            
-            j++ ;
-
-        }
-        return maxsize ;
-        
-    }
+	public:
+	int longestKSubstr(string &s, int k) {
+		// code here
+		int n = s.size() ;
+		unordered_map<char, int> freq ;
+		int maxsize = -1 ;
+		
+		int i = 0, j = 0 ;
+		
+		while (j<n) {
+			// calculations
+			freq[s[j]]++ ;
+			
+			// if invalid wala case : longest size nikalna hai
+			while (freq.size() > k) {
+				freq[s[i]]--;
+				
+				if (freq[s[i]] == 0) {
+					freq.erase(s[i]);
+				}
+				
+				i++;
+			}
+			
+			// found valid
+			if (freq.size() == k) {
+				maxsize = max(maxsize, j - i + 1) ;
+			}
+			
+			j++ ;
+			
+		}
+		return maxsize ;
+		
+	}
 };
+
 ```
 
 ---
