@@ -97,4 +97,16 @@
 |  |
 | ------- |
 | [0992-subarrays-with-k-different-integers](https://github.com/ahmadhomam/DSA/tree/master/0992-subarrays-with-k-different-integers) |
+## String
+|  |
+| ------- |
+| [0856-score-of-parentheses](https://github.com/ahmadhomam/DSA/tree/master/0856-score-of-parentheses) |
+## Stack
+|  |
+| ------- |
+| [0856-score-of-parentheses](https://github.com/ahmadhomam/DSA/tree/master/0856-score-of-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [0856-score-of-parentheses](https://github.com/ahmadhomam/DSA/tree/master/0856-score-of-parentheses) |
 <!---LeetCode Topics End-->
