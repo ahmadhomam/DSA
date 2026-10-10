@@ -57,6 +57,7 @@
 | [0904-fruit-into-baskets](https://github.com/ahmadhomam/DSA/tree/master/0904-fruit-into-baskets) |
 | [0992-subarrays-with-k-different-integers](https://github.com/ahmadhomam/DSA/tree/master/0992-subarrays-with-k-different-integers) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
+| [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
 ## Binary Search
 |  |
 | ------- |
@@ -75,6 +76,7 @@
 | ------- |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
+| [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
 ## Queue
 |  |
 | ------- |
@@ -112,4 +114,8 @@
 |  |
 | ------- |
 | [0856-score-of-parentheses](https://github.com/ahmadhomam/DSA/tree/master/0856-score-of-parentheses) |
+## Matrix
+|  |
+| ------- |
+| [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
 <!---LeetCode Topics End-->
