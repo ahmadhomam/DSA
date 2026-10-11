@@ -56,6 +56,7 @@
 | [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
+| [0724-find-pivot-index](https://github.com/ahmadhomam/DSA/tree/master/0724-find-pivot-index) |
 | [0904-fruit-into-baskets](https://github.com/ahmadhomam/DSA/tree/master/0904-fruit-into-baskets) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/ahmadhomam/DSA/tree/master/0974-subarray-sums-divisible-by-k) |
 | [0992-subarrays-with-k-different-integers](https://github.com/ahmadhomam/DSA/tree/master/0992-subarrays-with-k-different-integers) |
@@ -80,6 +81,7 @@
 | [0238-product-of-array-except-self](https://github.com/ahmadhomam/DSA/tree/master/0238-product-of-array-except-self) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
+| [0724-find-pivot-index](https://github.com/ahmadhomam/DSA/tree/master/0724-find-pivot-index) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/ahmadhomam/DSA/tree/master/0974-subarray-sums-divisible-by-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
 | [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
