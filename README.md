@@ -52,6 +52,7 @@
 ## Array
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/ahmadhomam/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/ahmadhomam/DSA/tree/master/0035-search-insert-position) |
 | [0238-product-of-array-except-self](https://github.com/ahmadhomam/DSA/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
@@ -67,6 +68,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0033-search-in-rotated-sorted-array](https://github.com/ahmadhomam/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/ahmadhomam/DSA/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
 | [0704-binary-search](https://github.com/ahmadhomam/DSA/tree/master/0704-binary-search) |
