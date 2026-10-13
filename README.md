@@ -66,6 +66,7 @@
 ## Binary Search
 |  |
 | ------- |
+| [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
 | [0704-binary-search](https://github.com/ahmadhomam/DSA/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
@@ -133,9 +134,14 @@
 ## Math
 |  |
 | ------- |
+| [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
 ## Pigeonhole Principle
 |  |
 | ------- |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
+## Newton's Method
+|  |
+| ------- |
+| [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
 <!---LeetCode Topics End-->
