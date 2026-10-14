@@ -55,6 +55,7 @@
 | [0033-search-in-rotated-sorted-array](https://github.com/ahmadhomam/DSA/tree/master/0033-search-in-rotated-sorted-array) |
 | [0035-search-insert-position](https://github.com/ahmadhomam/DSA/tree/master/0035-search-insert-position) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/ahmadhomam/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0162-find-peak-element](https://github.com/ahmadhomam/DSA/tree/master/0162-find-peak-element) |
 | [0238-product-of-array-except-self](https://github.com/ahmadhomam/DSA/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
@@ -73,6 +74,7 @@
 | [0035-search-insert-position](https://github.com/ahmadhomam/DSA/tree/master/0035-search-insert-position) |
 | [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/ahmadhomam/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0162-find-peak-element](https://github.com/ahmadhomam/DSA/tree/master/0162-find-peak-element) |
 | [0704-binary-search](https://github.com/ahmadhomam/DSA/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
