@@ -57,6 +57,7 @@
 | [0035-search-insert-position](https://github.com/ahmadhomam/DSA/tree/master/0035-search-insert-position) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/ahmadhomam/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/ahmadhomam/DSA/tree/master/0162-find-peak-element) |
+| [0189-rotate-array](https://github.com/ahmadhomam/DSA/tree/master/0189-rotate-array) |
 | [0238-product-of-array-except-self](https://github.com/ahmadhomam/DSA/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
@@ -145,6 +146,7 @@
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
+| [0189-rotate-array](https://github.com/ahmadhomam/DSA/tree/master/0189-rotate-array) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
 ## Pigeonhole Principle
 |  |
@@ -154,4 +156,8 @@
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
+## Two Pointers
+|  |
+| ------- |
+| [0189-rotate-array](https://github.com/ahmadhomam/DSA/tree/master/0189-rotate-array) |
 <!---LeetCode Topics End-->
