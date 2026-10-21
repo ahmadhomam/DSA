@@ -64,6 +64,7 @@
 | [0704-binary-search](https://github.com/ahmadhomam/DSA/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
 | [0724-find-pivot-index](https://github.com/ahmadhomam/DSA/tree/master/0724-find-pivot-index) |
+| [0875-koko-eating-bananas](https://github.com/ahmadhomam/DSA/tree/master/0875-koko-eating-bananas) |
 | [0904-fruit-into-baskets](https://github.com/ahmadhomam/DSA/tree/master/0904-fruit-into-baskets) |
 | [0974-subarray-sums-divisible-by-k](https://github.com/ahmadhomam/DSA/tree/master/0974-subarray-sums-divisible-by-k) |
 | [0992-subarrays-with-k-different-integers](https://github.com/ahmadhomam/DSA/tree/master/0992-subarrays-with-k-different-integers) |
@@ -80,6 +81,7 @@
 | [0162-find-peak-element](https://github.com/ahmadhomam/DSA/tree/master/0162-find-peak-element) |
 | [0704-binary-search](https://github.com/ahmadhomam/DSA/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
+| [0875-koko-eating-bananas](https://github.com/ahmadhomam/DSA/tree/master/0875-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
 ## Sliding Window
 |  |
