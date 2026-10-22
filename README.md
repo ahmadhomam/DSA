@@ -70,6 +70,7 @@
 | [0992-subarrays-with-k-different-integers](https://github.com/ahmadhomam/DSA/tree/master/0992-subarrays-with-k-different-integers) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
 | [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
+| [3942-minimum-operations-to-sort-a-permutation](https://github.com/ahmadhomam/DSA/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Binary Search
 |  |
 | ------- |
