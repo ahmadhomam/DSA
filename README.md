@@ -72,6 +72,7 @@
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ahmadhomam/DSA/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
 | [1870-minimum-speed-to-arrive-on-time](https://github.com/ahmadhomam/DSA/tree/master/1870-minimum-speed-to-arrive-on-time) |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/ahmadhomam/DSA/tree/master/3644-maximum-k-to-sort-a-permutation) |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/ahmadhomam/DSA/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Binary Search
 |  |
@@ -167,4 +168,8 @@
 |  |
 | ------- |
 | [0189-rotate-array](https://github.com/ahmadhomam/DSA/tree/master/0189-rotate-array) |
+## Bit Manipulation
+|  |
+| ------- |
+| [3644-maximum-k-to-sort-a-permutation](https://github.com/ahmadhomam/DSA/tree/master/3644-maximum-k-to-sort-a-permutation) |
 <!---LeetCode Topics End-->
