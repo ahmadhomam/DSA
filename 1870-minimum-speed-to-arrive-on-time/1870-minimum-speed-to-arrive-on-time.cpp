@@ -1,7 +1,6 @@
 class Solution {
 public:
     bool isfeasible(vector<int>& dist, double hour,int k){
-        int count = 0 ;
         double currtime = 0 ;
         for(int i=0;i<dist.size();i++){
             double time = dist[i]/double(k) ;
@@ -9,15 +8,20 @@ public:
             time= ceil(time) ;
 
             currtime += time ;
+
+            if(currtime > hour) return false ;
         }
-        return currtime <= hour ;
+        return true ;
     }
     int minSpeedOnTime(vector<int>& dist, double hour) {
-        int low = 0 ;
-        int high = 10e7;
+        int low = 1 ;
+        int high = 10000000;
         int mid ;
 
         int ans = -1 ;
+        if(hour <= dist.size()-1)
+        return -1 ;
+
         while(low <= high){
             mid = low + (high-low)/2  ;
 
