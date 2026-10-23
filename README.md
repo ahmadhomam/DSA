@@ -71,6 +71,7 @@
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ahmadhomam/DSA/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
+| [1870-minimum-speed-to-arrive-on-time](https://github.com/ahmadhomam/DSA/tree/master/1870-minimum-speed-to-arrive-on-time) |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/ahmadhomam/DSA/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Binary Search
 |  |
@@ -86,6 +87,7 @@
 | [0875-koko-eating-bananas](https://github.com/ahmadhomam/DSA/tree/master/0875-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ahmadhomam/DSA/tree/master/1011-capacity-to-ship-packages-within-d-days) |
+| [1870-minimum-speed-to-arrive-on-time](https://github.com/ahmadhomam/DSA/tree/master/1870-minimum-speed-to-arrive-on-time) |
 ## Sliding Window
 |  |
 | ------- |
