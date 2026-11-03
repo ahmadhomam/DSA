@@ -76,6 +76,7 @@
 | [1552-magnetic-force-between-two-balls](https://github.com/ahmadhomam/DSA/tree/master/1552-magnetic-force-between-two-balls) |
 | [1870-minimum-speed-to-arrive-on-time](https://github.com/ahmadhomam/DSA/tree/master/1870-minimum-speed-to-arrive-on-time) |
 | [3644-maximum-k-to-sort-a-permutation](https://github.com/ahmadhomam/DSA/tree/master/3644-maximum-k-to-sort-a-permutation) |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/ahmadhomam/DSA/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 | [3942-minimum-operations-to-sort-a-permutation](https://github.com/ahmadhomam/DSA/tree/master/3942-minimum-operations-to-sort-a-permutation) |
 ## Binary Search
 |  |
@@ -162,6 +163,7 @@
 | [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
 | [0189-rotate-array](https://github.com/ahmadhomam/DSA/tree/master/0189-rotate-array) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
+| [3736-minimum-moves-to-equal-array-elements-iii](https://github.com/ahmadhomam/DSA/tree/master/3736-minimum-moves-to-equal-array-elements-iii) |
 ## Pigeonhole Principle
 |  |
 | ------- |
