@@ -60,6 +60,7 @@
 | [0189-rotate-array](https://github.com/ahmadhomam/DSA/tree/master/0189-rotate-array) |
 | [0238-product-of-array-except-self](https://github.com/ahmadhomam/DSA/tree/master/0238-product-of-array-except-self) |
 | [0239-sliding-window-maximum](https://github.com/ahmadhomam/DSA/tree/master/0239-sliding-window-maximum) |
+| [0240-search-a-2d-matrix-ii](https://github.com/ahmadhomam/DSA/tree/master/0240-search-a-2d-matrix-ii) |
 | [0523-continuous-subarray-sum](https://github.com/ahmadhomam/DSA/tree/master/0523-continuous-subarray-sum) |
 | [0704-binary-search](https://github.com/ahmadhomam/DSA/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
@@ -88,6 +89,7 @@
 | [0069-sqrtx](https://github.com/ahmadhomam/DSA/tree/master/0069-sqrtx) |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/ahmadhomam/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0162-find-peak-element](https://github.com/ahmadhomam/DSA/tree/master/0162-find-peak-element) |
+| [0240-search-a-2d-matrix-ii](https://github.com/ahmadhomam/DSA/tree/master/0240-search-a-2d-matrix-ii) |
 | [0704-binary-search](https://github.com/ahmadhomam/DSA/tree/master/0704-binary-search) |
 | [0713-subarray-product-less-than-k](https://github.com/ahmadhomam/DSA/tree/master/0713-subarray-product-less-than-k) |
 | [0875-koko-eating-bananas](https://github.com/ahmadhomam/DSA/tree/master/0875-koko-eating-bananas) |
@@ -157,6 +159,7 @@
 ## Matrix
 |  |
 | ------- |
+| [0240-search-a-2d-matrix-ii](https://github.com/ahmadhomam/DSA/tree/master/0240-search-a-2d-matrix-ii) |
 | [1254-number-of-closed-islands](https://github.com/ahmadhomam/DSA/tree/master/1254-number-of-closed-islands) |
 | [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
 ## Math
@@ -200,4 +203,8 @@
 | ------- |
 | [1385-find-the-distance-value-between-two-arrays](https://github.com/ahmadhomam/DSA/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1552-magnetic-force-between-two-balls](https://github.com/ahmadhomam/DSA/tree/master/1552-magnetic-force-between-two-balls) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0240-search-a-2d-matrix-ii](https://github.com/ahmadhomam/DSA/tree/master/0240-search-a-2d-matrix-ii) |
 <!---LeetCode Topics End-->
