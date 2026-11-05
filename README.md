@@ -72,6 +72,7 @@
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ahmadhomam/DSA/tree/master/1011-capacity-to-ship-packages-within-d-days) |
 | [1254-number-of-closed-islands](https://github.com/ahmadhomam/DSA/tree/master/1254-number-of-closed-islands) |
 | [1314-matrix-block-sum](https://github.com/ahmadhomam/DSA/tree/master/1314-matrix-block-sum) |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/ahmadhomam/DSA/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/ahmadhomam/DSA/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1552-magnetic-force-between-two-balls](https://github.com/ahmadhomam/DSA/tree/master/1552-magnetic-force-between-two-balls) |
 | [1870-minimum-speed-to-arrive-on-time](https://github.com/ahmadhomam/DSA/tree/master/1870-minimum-speed-to-arrive-on-time) |
@@ -92,6 +93,7 @@
 | [0875-koko-eating-bananas](https://github.com/ahmadhomam/DSA/tree/master/0875-koko-eating-bananas) |
 | [1004-max-consecutive-ones-iii](https://github.com/ahmadhomam/DSA/tree/master/1004-max-consecutive-ones-iii) |
 | [1011-capacity-to-ship-packages-within-d-days](https://github.com/ahmadhomam/DSA/tree/master/1011-capacity-to-ship-packages-within-d-days) |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/ahmadhomam/DSA/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/ahmadhomam/DSA/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1552-magnetic-force-between-two-balls](https://github.com/ahmadhomam/DSA/tree/master/1552-magnetic-force-between-two-balls) |
 | [1870-minimum-speed-to-arrive-on-time](https://github.com/ahmadhomam/DSA/tree/master/1870-minimum-speed-to-arrive-on-time) |
@@ -176,6 +178,7 @@
 |  |
 | ------- |
 | [0189-rotate-array](https://github.com/ahmadhomam/DSA/tree/master/0189-rotate-array) |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/ahmadhomam/DSA/tree/master/1385-find-the-distance-value-between-two-arrays) |
 ## Bit Manipulation
 |  |
 | ------- |
@@ -195,5 +198,6 @@
 ## Sorting
 |  |
 | ------- |
+| [1385-find-the-distance-value-between-two-arrays](https://github.com/ahmadhomam/DSA/tree/master/1385-find-the-distance-value-between-two-arrays) |
 | [1552-magnetic-force-between-two-balls](https://github.com/ahmadhomam/DSA/tree/master/1552-magnetic-force-between-two-balls) |
 <!---LeetCode Topics End-->
